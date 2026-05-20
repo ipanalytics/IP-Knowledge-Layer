@@ -513,6 +513,49 @@ def append_summary(path, row):
         writer.writerows(old)
 
 
+def fmt(value):
+    return f"{int(value):,}"
+
+
+def render_readme_summary(output):
+    summary = output["summary"]
+    layers = output["aggregates"]["layers"]
+    providers = output["aggregates"]["providers"][:5]
+    lines = [
+        "<!-- IPKL_SUMMARY_START -->",
+        "| Metric | Value |",
+        "|---|---:|",
+        f"| Updated | `{summary['generatedAt']}` |",
+        f"| Records | {fmt(summary['records'])} |",
+        f"| Prefix records | {fmt(summary['prefixRecords'])} |",
+        f"| ASN signals | {fmt(summary['asnSignals'])} |",
+        f"| Sources | {fmt(summary['sources'])} |",
+        f"| Collector errors | {fmt(len(summary.get('errors', {})))} |",
+        "",
+        "| Layer | Records |",
+        "|---|---:|",
+    ]
+    lines.extend(f"| `{row['key']}` | {fmt(row['count'])} |" for row in layers)
+    lines.extend(["", "| Top Provider | Records |", "|---|---:|"])
+    lines.extend(f"| {row['key']} | {fmt(row['count'])} |" for row in providers)
+    lines.append("<!-- IPKL_SUMMARY_END -->")
+    return "\n".join(lines)
+
+
+def update_readme(output):
+    path = ROOT / "README.md"
+    if not path.exists():
+        return
+    text = path.read_text()
+    start = "<!-- IPKL_SUMMARY_START -->"
+    end = "<!-- IPKL_SUMMARY_END -->"
+    if start not in text or end not in text:
+        return
+    before = text.split(start, 1)[0]
+    after = text.split(end, 1)[1]
+    path.write_text(before + render_readme_summary(output) + after)
+
+
 def main():
     now = datetime.now(timezone.utc).replace(microsecond=0)
     generated_at = now.isoformat().replace("+00:00", "Z")
@@ -589,6 +632,7 @@ def main():
     )
     write_json(SNAPSHOTS / f"{stamp}.json", output)
     append_summary(HISTORY / "summary.csv", summary)
+    update_readme(output)
 
     snapshots = sorted(SNAPSHOTS.glob("*.json"))
     for path in snapshots[:-RETENTION_SNAPSHOTS]:
