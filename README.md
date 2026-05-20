@@ -7,6 +7,22 @@ This repository is data-first: the main output is a set of machine-readable file
 that can be pulled directly with `curl`, GitHub Actions, SIEM pipelines, WAF
 tooling, anti-fraud systems, and internal enrichment jobs.
 
+## Why This Exists
+
+Most public IP repositories publish one narrow list: cloud IPs, Tor IPs, crawler
+IPs, or ASN mappings. IP Knowledge Layer combines multiple public and derived
+signals into one normalized enrichment layer.
+
+The value is context:
+
+```text
+CIDR or ASN -> layer -> provider -> service -> tags -> confidence -> source
+```
+
+Instead of only knowing that a prefix exists, consumers can understand whether it
+belongs to cloud hosting, CDN edge, GitHub infrastructure, AI crawlers, Tor, or a
+VPN-adjacent ASN signal.
+
 ## Current Release
 
 Latest generated snapshot:
@@ -42,6 +58,26 @@ curl -fsSL "$BASE/ip-knowledge.csv"
 curl -fsSL "$BASE/cloud-prefixes.csv"
 curl -fsSL "$BASE/asn-signals.csv"
 curl -fsSL "$BASE/cidr-tags.txt"
+```
+
+## Which File Should I Use?
+
+| Need | Use this file | Why |
+|---|---|---|
+| I want the full knowledge layer | `ip-knowledge.jsonl` | Best for pipelines, `jq`, streaming, and preserving nested fields |
+| I want Excel/BI/SIEM-friendly data | `ip-knowledge.csv` | Same broad dataset in tabular form |
+| I only need cloud/CDN/developer platform ranges | `cloud-prefixes.csv` | Smaller and focused on AWS, Azure, GCP, Cloudflare, Fastly, GitHub, Oracle |
+| I need quick CIDR-to-tags lookup | `cidr-tags.txt` | Lightweight text file: one CIDR plus comma-separated tags per line |
+| I care about VPN-heavy/provider ASN signals | `asn-signals.csv` | ASN-level aggregate evidence, without raw VPN IP publication |
+| I need to check source health and counts | `summary.json` | Current run status, layer counts, provider/source aggregates |
+| I need source provenance | `source-index.json` | Source URLs, source types, and record counts |
+
+For most users:
+
+```text
+Start with cloud-prefixes.csv if you only need cloud/datacenter/CDN ranges.
+Start with ip-knowledge.jsonl if you want the full enrichment layer.
+Start with cidr-tags.txt if you want the simplest possible feed.
 ```
 
 ## Files
@@ -168,6 +204,35 @@ Extract AI crawler prefixes:
 curl -fsSL https://raw.githubusercontent.com/ipanalytics/IP-Knowledge-Layer/main/data/current/ip-knowledge.jsonl \
   | jq -r 'select(.layer=="crawler-bot" and (.tags | index("ai-crawler"))) | .prefix'
 ```
+
+Use as a lightweight block/allow enrichment feed:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ipanalytics/IP-Knowledge-Layer/main/data/current/cidr-tags.txt \
+  | grep 'cloud'
+```
+
+Find all ASN signals for a provider:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ipanalytics/IP-Knowledge-Layer/main/data/current/asn-signals.csv \
+  | awk -F, '$3 == "NordVPN" { print }'
+```
+
+## What It Can Help With
+
+- IP enrichment for fraud/risk systems
+- WAF and SIEM context
+- Cloud/datacenter detection
+- CDN/edge infrastructure classification
+- AI crawler and bot visibility
+- Tor relay context
+- ASN-level VPN-adjacent signals
+- Source provenance for explainable decisions
+- Building internal allowlists, denylists, and review queues
+
+This project is not a malware or abuse blacklist. It provides operational
+network context with source provenance and confidence.
 
 ## Local Update
 
