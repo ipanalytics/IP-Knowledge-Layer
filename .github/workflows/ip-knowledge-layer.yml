@@ -1,0 +1,33 @@
+name: IP Knowledge Layer
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "37 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ip-knowledge-layer
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update knowledge layer
+        env:
+          IPKL_USER_AGENT: "IP-Knowledge-Layer/0.1 (+${{ github.server_url }}/${{ github.repository }}; GitHub Actions public-data collector)"
+          IPKL_SNAPSHOT_RETENTION: "168"
+          IPKL_HISTORY_RETENTION: "720"
+        run: python3 scripts/update.py
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update IP knowledge layer"
+          file_pattern: "data"
