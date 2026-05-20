@@ -25,24 +25,31 @@ VPN-adjacent ASN signal.
 
 ## Current Release
 
-Latest generated snapshot:
+<!-- IPKL_SUMMARY_START -->
+| Metric | Value |
+|---|---:|
+| Updated | `2026-05-20T06:55:31Z` |
+| Records | 113,349 |
+| Prefix records | 111,419 |
+| ASN signals | 1,930 |
+| Sources | 12 |
+| Collector errors | 0 |
 
-```text
-records:       113,349
-prefixRecords: 111,419
-asnSignals:    1,930
-sources:       12
-errors:        0
-```
+| Layer | Records |
+|---|---:|
+| `hosting-cloud` | 97,973 |
+| `anonymity` | 11,615 |
+| `asn-signal` | 1,930 |
+| `crawler-bot` | 1,831 |
 
-Layer counts:
-
-```text
-hosting-cloud: 97,973
-anonymity:     11,615
-crawler-bot:   1,831
-asn-signal:    1,930
-```
+| Top Provider | Records |
+|---|---:|
+| Azure | 73,422 |
+| AWS | 15,675 |
+| Tor | 11,615 |
+| GitHub | 6,677 |
+| Oracle Cloud | 1,078 |
+<!-- IPKL_SUMMARY_END -->
 
 ## Download URLs
 
