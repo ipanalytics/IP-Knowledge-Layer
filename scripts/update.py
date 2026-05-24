@@ -521,11 +521,14 @@ def render_readme_summary(output):
     summary = output["summary"]
     layers = output["aggregates"]["layers"]
     providers = output["aggregates"]["providers"][:5]
+    release_tag = release_tag_for(summary["generatedAt"])
+    release_url = f"https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/{release_tag}"
     lines = [
         "<!-- IPKL_SUMMARY_START -->",
         "| Metric | Value |",
         "|---|---:|",
         f"| Updated | `{summary['generatedAt']}` |",
+        f"| Release | [{release_tag}]({release_url}) |",
         f"| Records | {fmt(summary['records'])} |",
         f"| Prefix records | {fmt(summary['prefixRecords'])} |",
         f"| ASN signals | {fmt(summary['asnSignals'])} |",
@@ -542,6 +545,76 @@ def render_readme_summary(output):
     return "\n".join(lines)
 
 
+def release_tag_for(generated_at):
+    return "data-" + generated_at.replace("-", "").replace(":", "").replace("T", "-").replace("Z", "Z")
+
+
+def render_release_page(output):
+    summary = output["summary"]
+    layers = output["aggregates"]["layers"]
+    providers = output["aggregates"]["providers"][:10]
+    sources = output["aggregates"]["sources"]
+    release_tag = release_tag_for(summary["generatedAt"])
+    release_url = f"https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/{release_tag}"
+    base = f"https://raw.githubusercontent.com/ipanalytics/IP-Knowledge-Layer/main/data/current"
+    assets = [
+        "summary.json",
+        "source-index.json",
+        "ip-knowledge.jsonl",
+        "ip-knowledge.csv",
+        "cloud-prefixes.csv",
+        "asn-signals.csv",
+        "cidr-tags.txt",
+    ]
+    lines = [
+        f"# IP Knowledge Layer {release_tag}",
+        "",
+        f"Automated data release generated at `{summary['generatedAt']}`.",
+        "",
+        f"GitHub Release: [{release_tag}]({release_url})",
+        "",
+        "## Highlights",
+        "",
+        f"- {fmt(summary['records'])} normalized knowledge records",
+        f"- {fmt(summary['prefixRecords'])} prefix records",
+        f"- {fmt(summary['asnSignals'])} ASN signals",
+        f"- {fmt(summary['sources'])} sources",
+        f"- {fmt(len(summary.get('errors', {})))} collector errors",
+        "",
+        "## Files To Pull",
+        "",
+        "The same files are committed under `data/current` and attached to the GitHub Release for this run.",
+        "",
+        "```bash",
+        'BASE="https://raw.githubusercontent.com/ipanalytics/IP-Knowledge-Layer/main/data/current"',
+        "",
+    ]
+    lines.extend(f'curl -fsSLO "$BASE/{asset}"' for asset in assets)
+    lines.extend(["```", "", "## Current Files", "", "| File | Direct URL |", "|---|---|"])
+    lines.extend(f"| `data/current/{asset}` | [`{asset}`]({base}/{asset}) |" for asset in assets)
+    lines.extend(["", "## Layers", "", "| Layer | Records |", "|---|---:|"])
+    lines.extend(f"| `{row['key']}` | {fmt(row['count'])} |" for row in layers)
+    lines.extend(["", "## Top Providers", "", "| Provider | Records |", "|---|---:|"])
+    lines.extend(f"| {row['key']} | {fmt(row['count'])} |" for row in providers)
+    lines.extend(["", "## Sources", "", "| Source | Records |", "|---|---:|"])
+    lines.extend(f"| `{row['key']}` | {fmt(row['count'])} |" for row in sources)
+    if summary.get("errors"):
+        lines.extend(["", "## Collector Errors", "", "| Collector | Error |", "|---|---|"])
+        lines.extend(f"| `{key}` | `{value}` |" for key, value in sorted(summary["errors"].items()))
+    else:
+        lines.extend(["", "## Collector Errors", "", "None."])
+    lines.extend(
+        [
+            "",
+            "## Notes",
+            "",
+            "- ASN signals are aggregate provider-to-ASN evidence, not raw VPN IP publication.",
+            "- Snapshot retention keeps compact summary snapshots only; full current data is in `data/current` and release assets.",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
 def update_readme(output):
     path = ROOT / "README.md"
     if not path.exists():
@@ -554,6 +627,10 @@ def update_readme(output):
     before = text.split(start, 1)[0]
     after = text.split(end, 1)[1]
     path.write_text(before + render_readme_summary(output) + after)
+
+
+def update_release_page(output):
+    (ROOT / "RELEASE.md").write_text(render_release_page(output))
 
 
 def main():
@@ -633,6 +710,7 @@ def main():
     write_json(SNAPSHOTS / f"{stamp}.json", output)
     append_summary(HISTORY / "summary.csv", summary)
     update_readme(output)
+    update_release_page(output)
 
     snapshots = sorted(SNAPSHOTS.glob("*.json"))
     for path in snapshots[:-RETENTION_SNAPSHOTS]:
