@@ -28,27 +28,26 @@ VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-05-20T06:55:31Z` |
-| Release | [data-20260520-065531Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260520-065531Z) |
-| Records | 113,349 |
-| Prefix records | 111,419 |
-| ASN signals | 1,930 |
-| Sources | 12 |
-| Collector errors | 0 |
+| Updated | `2026-05-24T07:33:35Z` |
+| Release | [data-20260524-073335Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260524-073335Z) |
+| Records | 111,519 |
+| Prefix records | 111,519 |
+| ASN signals | 0 |
+| Sources | 11 |
+| Collector errors | 1 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 97,973 |
-| `anonymity` | 11,615 |
-| `asn-signal` | 1,930 |
-| `crawler-bot` | 1,831 |
+| `hosting-cloud` | 98,193 |
+| `anonymity` | 11,504 |
+| `crawler-bot` | 1,822 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 73,422 |
-| AWS | 15,675 |
-| Tor | 11,615 |
-| GitHub | 6,677 |
+| AWS | 15,869 |
+| Tor | 11,504 |
+| GitHub | 6,703 |
 | Oracle Cloud | 1,078 |
 <!-- IPKL_SUMMARY_END -->
 
