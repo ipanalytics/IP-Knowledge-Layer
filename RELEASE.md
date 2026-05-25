@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20260525-105807Z
+# IP Knowledge Layer data-20260520-065531Z
 
-Automated data release generated at `2026-05-25T10:58:07Z`.
+Automated data release generated at `2026-05-20T06:55:31Z`.
 
-GitHub Release: [data-20260525-105807Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-105807Z)
+GitHub Release: [data-20260520-065531Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260520-065531Z)
 
 ## Highlights
 
-- 111,506 normalized knowledge records
-- 111,506 prefix records
-- 0 ASN signals
-- 11 sources
-- 1 collector errors
+- 113,349 normalized knowledge records
+- 111,419 prefix records
+- 1,930 ASN signals
+- 12 sources
+- 0 collector errors
 
 ## Files To Pull
 
@@ -44,46 +44,28 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 98,191 |
-| `anonymity` | 11,493 |
-| `crawler-bot` | 1,822 |
+| `hosting-cloud` | 97,973 |
+| `anonymity` | 11,615 |
+| `asn-signal` | 1,930 |
+| `crawler-bot` | 1,831 |
 
 ## Top Providers
 
 | Provider | Records |
 |---|---:|
 | Azure | 73,422 |
-| AWS | 15,867 |
-| Tor | 11,493 |
-| GitHub | 6,703 |
+| AWS | 15,675 |
+| Tor | 11,615 |
+| GitHub | 6,677 |
 | Oracle Cloud | 1,078 |
-| Google Cloud | 967 |
-| Google | 449 |
-| DuckDuckGo | 318 |
-| StatusCake | 296 |
-| OpenAI | 263 |
 
 ## Sources
 
-| Source | Records |
-|---|---:|
-| `azure` | 73,422 |
-| `aws` | 15,867 |
-| `tor-radar` | 11,493 |
-| `github-meta` | 6,703 |
-| `crawler-scope` | 1,822 |
-| `oracle-cloud` | 1,078 |
-| `gcp-cloud` | 967 |
-| `gcp-goog` | 111 |
-| `fastly` | 21 |
-| `cloudflare-v4` | 15 |
-| `cloudflare-v6` | 7 |
+See `data/current/source-index.json` for source-level record counts and provenance.
 
 ## Collector Errors
 
-| Collector | Error |
-|---|---|
-| `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
+None.
 
 ## Notes
 

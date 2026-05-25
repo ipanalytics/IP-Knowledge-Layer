@@ -2,6 +2,9 @@
 
 Open IP enrichment knowledge layer for CIDR, ASN, cloud, crawler, Tor, and
 VPN-adjacent network intelligence.
+It also includes satellite-internet prefix intelligence derived from public
+operator GeoIP feeds, subnet-to-PoP mappings, BGP evidence, and ownership
+signals.
 
 This repository is data-first: the main output is a set of machine-readable files
 that can be pulled directly with `curl`, GitHub Actions, SIEM pipelines, WAF
@@ -21,33 +24,34 @@ CIDR or ASN -> layer -> provider -> service -> tags -> confidence -> source
 
 Instead of only knowing that a prefix exists, consumers can understand whether it
 belongs to cloud hosting, CDN edge, GitHub infrastructure, AI crawlers, Tor, or a
-VPN-adjacent ASN signal.
+satellite internet provider, or a VPN-adjacent ASN signal.
 
 ## Current Release
 
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-05-25T10:58:07Z` |
-| Release | [data-20260525-105807Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-105807Z) |
-| Records | 111,506 |
-| Prefix records | 111,506 |
-| ASN signals | 0 |
-| Sources | 11 |
-| Collector errors | 1 |
+| Updated | `2026-05-20T06:55:31Z` |
+| Release | [data-20260520-065531Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260520-065531Z) |
+| Records | 113,349 |
+| Prefix records | 111,419 |
+| ASN signals | 1,930 |
+| Sources | 12 |
+| Collector errors | 0 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 98,191 |
-| `anonymity` | 11,493 |
-| `crawler-bot` | 1,822 |
+| `hosting-cloud` | 97,973 |
+| `anonymity` | 11,615 |
+| `asn-signal` | 1,930 |
+| `crawler-bot` | 1,831 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 73,422 |
-| AWS | 15,867 |
-| Tor | 11,493 |
-| GitHub | 6,703 |
+| AWS | 15,675 |
+| Tor | 11,615 |
+| GitHub | 6,677 |
 | Oracle Cloud | 1,078 |
 <!-- IPKL_SUMMARY_END -->
 
@@ -127,6 +131,13 @@ derived from [CrawlerScope](https://github.com/ipanalytics/CrawlerScope).
 
 Tor relay host routes derived from [Tor-Radar](https://github.com/ipanalytics/Tor-Radar).
 
+### `satellite-internet`
+
+Satellite internet and satellite service provider prefixes derived from
+[Sat-geoip](https://github.com/ipanalytics/Sat-geoip). Records preserve operator,
+orbit class, BGP state, GeoIP semantics, PoP assignment, and confidence evidence
+in JSONL `metrics`.
+
 ### `asn-signal`
 
 ASN-level VPN-adjacent aggregate signals from provider analysis. This layer does
@@ -149,6 +160,7 @@ Derived project sources:
 
 - CrawlerScope: crawler, AI bot, monitoring, scanner, and SEO bot ranges
 - Tor-Radar: Tor relay and exit IPs
+- Sat-geoip: satellite internet prefixes, operator attribution, BGP/PoP/GeoIP evidence
 - VPN provider ASN summary: aggregate ASN signals, no raw VPN IP feed
 
 ## Record Shape
@@ -169,6 +181,12 @@ Example `anonymity` JSONL record:
 
 ```json
 {"prefix":"185.220.101.1/32","layer":"anonymity","provider":"Tor","service":"exit","tags":["anonymity-network","tor","tor-exit"],"confidence":0.98,"source_id":"tor-radar"}
+```
+
+Example `satellite-internet` JSONL record:
+
+```json
+{"prefix":"143.105.187.0/24","layer":"satellite-internet","provider":"starlink","service":"satellite_internet","tags":["satellite","satellite-internet","leo","bgp_announced"],"confidence":0.985,"source_id":"sat-geoip"}
 ```
 
 Example `asn-signal` JSONL record:
