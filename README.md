@@ -31,26 +31,26 @@ satellite internet provider, or a VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-05-25T14:36:12Z` |
-| Release | [data-20260525-143612Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-143612Z) |
-| Records | 122,739 |
-| Prefix records | 122,739 |
+| Updated | `2026-05-25T15:39:05Z` |
+| Release | [data-20260525-153905Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-153905Z) |
+| Records | 122,762 |
+| Prefix records | 122,762 |
 | ASN signals | 0 |
 | Sources | 12 |
 | Collector errors | 1 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 98,192 |
-| `anonymity` | 11,493 |
+| `hosting-cloud` | 98,194 |
+| `anonymity` | 11,490 |
 | `satellite-internet` | 11,232 |
-| `crawler-bot` | 1,822 |
+| `crawler-bot` | 1,846 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 73,422 |
-| AWS | 15,868 |
-| Tor | 11,493 |
+| AWS | 15,870 |
+| Tor | 11,490 |
 | GitHub | 6,703 |
 | starlink | 5,407 |
 <!-- IPKL_SUMMARY_END -->
