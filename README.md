@@ -28,10 +28,10 @@ VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-05-25T05:08:54Z` |
-| Release | [data-20260525-050854Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-050854Z) |
-| Records | 111,502 |
-| Prefix records | 111,502 |
+| Updated | `2026-05-25T10:58:07Z` |
+| Release | [data-20260525-105807Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260525-105807Z) |
+| Records | 111,506 |
+| Prefix records | 111,506 |
 | ASN signals | 0 |
 | Sources | 11 |
 | Collector errors | 1 |
@@ -39,14 +39,14 @@ VPN-adjacent ASN signal.
 | Layer | Records |
 |---|---:|
 | `hosting-cloud` | 98,191 |
-| `anonymity` | 11,489 |
+| `anonymity` | 11,493 |
 | `crawler-bot` | 1,822 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 73,422 |
 | AWS | 15,867 |
-| Tor | 11,489 |
+| Tor | 11,493 |
 | GitHub | 6,703 |
 | Oracle Cloud | 1,078 |
 <!-- IPKL_SUMMARY_END -->
