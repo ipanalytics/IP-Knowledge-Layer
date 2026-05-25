@@ -99,6 +99,13 @@ SOURCES = {
         "tags": ["tor", "anonymity-network"],
         "confidence": 0.98,
     },
+    "sat-geoip": {
+        "type": "derived_project",
+        "url": f"{RAW_BASE}/Sat-geoip/main/outputs/sat-geoip-prefixes.jsonl",
+        "local": WORKSPACE / "Sat-geoip" / "outputs" / "sat-geoip-prefixes.jsonl",
+        "tags": ["satellite", "satellite-internet"],
+        "confidence": 0.95,
+    },
     "vpn-asn-summary": {
         "type": "local_project",
         "url": "https://github.com/ipanalytics/ASN-VPN-Network-Intelligence",
@@ -134,6 +141,28 @@ def load_json_source(source):
         return read_json(Path(local)), None
     try:
         return fetch_json(source["url"]), None
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
+        return None, str(exc)
+
+
+def parse_jsonl(text):
+    rows = []
+    for line in text.splitlines():
+        line = line.strip()
+        if line:
+            rows.append(json.loads(line))
+    return rows
+
+
+def load_jsonl_source(source):
+    local = source.get("local")
+    if local and Path(local).exists():
+        try:
+            return parse_jsonl(Path(local).read_text()), None
+        except json.JSONDecodeError as exc:
+            return None, str(exc)
+    try:
+        return parse_jsonl(fetch_text(source["url"])), None
     except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
         return None, str(exc)
 
@@ -416,6 +445,68 @@ def collect_tor_radar(records, generated_at):
     return None
 
 
+def collect_sat_geoip(records, generated_at):
+    sid = "sat-geoip"
+    source = SOURCES[sid]
+    rows, error = load_jsonl_source(source)
+    if error or not rows:
+        return error
+    for row in rows:
+        prefix = normalize_prefix(row.get("prefix"))
+        if not prefix:
+            continue
+        confidence = source["confidence"]
+        data_confidence = row.get("data_confidence") or {}
+        if isinstance(data_confidence, dict) and data_confidence.get("attribution") is not None:
+            try:
+                confidence = float(data_confidence["attribution"])
+            except (TypeError, ValueError):
+                pass
+
+        tags = set(source["tags"])
+        for key in ("operator_group", "service_type", "orbit_class", "bgp_state"):
+            if row.get(key):
+                tags.add(str(row[key]))
+        tags.update(str(flag) for flag in row.get("quality_flags", []) if flag)
+
+        records.append(
+            {
+                "prefix": prefix,
+                "layer": "satellite-internet",
+                "provider": row.get("operator"),
+                "service": row.get("service_type") or "satellite_internet",
+                "region": row.get("geoip_region"),
+                "country": row.get("geoip_country"),
+                "asn": row.get("origin_asn"),
+                "asn_name": row.get("origin_as_name"),
+                "tags": sorted(tags),
+                "confidence": confidence,
+                "source_id": sid,
+                "source_url": source["url"],
+                "source_type": source["type"],
+                "updated_at": generated_at,
+                "metrics": {
+                    "operator_group": row.get("operator_group"),
+                    "orbit_class": row.get("orbit_class"),
+                    "bgp_state": row.get("bgp_state"),
+                    "geoip_city": row.get("geoip_city"),
+                    "geoip_source": row.get("geoip_source"),
+                    "geoip_semantics": row.get("geoip_semantics"),
+                    "pop_code": row.get("pop_code"),
+                    "pop_iata": row.get("pop_iata"),
+                    "pop_source": row.get("pop_source"),
+                    "active_user_claim": row.get("active_user_claim"),
+                    "ground_station_claim": row.get("ground_station_claim"),
+                    "geo_confidence": data_confidence.get("geo") if isinstance(data_confidence, dict) else None,
+                    "first_seen": row.get("first_seen"),
+                    "last_seen": row.get("last_seen"),
+                    "change_type": row.get("change_type"),
+                },
+            }
+        )
+    return None
+
+
 def collect_vpn_asn(records, generated_at):
     sid = "vpn-asn-summary"
     source = SOURCES[sid]
@@ -500,7 +591,17 @@ def write_csv(path, rows, fields):
 
 
 def append_summary(path, row):
-    fields = ["generatedAt", "records", "prefixRecords", "asnSignals", "sources", "hostingCloud", "crawlerBot", "anonymity"]
+    fields = [
+        "generatedAt",
+        "records",
+        "prefixRecords",
+        "asnSignals",
+        "sources",
+        "hostingCloud",
+        "crawlerBot",
+        "anonymity",
+        "satelliteInternet",
+    ]
     old = []
     if path.exists():
         with path.open() as f:
@@ -659,7 +760,7 @@ def main():
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, KeyError) as exc:
             errors[getattr(fn, "__name__", "collector")] = str(exc)
 
-    for fn in (collect_crawler_scope, collect_tor_radar, collect_vpn_asn):
+    for fn in (collect_crawler_scope, collect_tor_radar, collect_sat_geoip, collect_vpn_asn):
         error = fn(records, generated_at)
         if error:
             errors[fn.__name__] = error
@@ -680,6 +781,7 @@ def main():
         "hostingCloud": by_layer.get("hosting-cloud", 0),
         "crawlerBot": by_layer.get("crawler-bot", 0),
         "anonymity": by_layer.get("anonymity", 0),
+        "satelliteInternet": by_layer.get("satellite-internet", 0),
         "errors": errors,
     }
     source_index = {}
