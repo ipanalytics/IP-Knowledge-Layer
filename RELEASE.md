@@ -1,8 +1,8 @@
-# IP Knowledge Layer data-20260528-164023Z
+# IP Knowledge Layer data-20260528-205800Z
 
-Automated data release generated at `2026-05-28T16:40:23Z`.
+Automated data release generated at `2026-05-28T20:58:00Z`.
 
-GitHub Release: [data-20260528-164023Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260528-164023Z)
+GitHub Release: [data-20260528-205800Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260528-205800Z)
 
 ## Highlights
 
