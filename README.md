@@ -6,9 +6,16 @@ It also includes satellite-internet prefix intelligence derived from public
 operator GeoIP feeds, subnet-to-PoP mappings, BGP evidence, and ownership
 signals.
 
+<p align="center">
+  <img src="./site/banner.png" alt="Open IP enrichment knowledge layer for CIDR, ASN, cloud, crawler, Tor, and
+VPN-adjacent network intelligence." width="100%">
+</p>
+
 This repository is data-first: the main output is a set of machine-readable files
 that can be pulled directly with `curl`, GitHub Actions, SIEM pipelines, WAF
 tooling, anti-fraud systems, and internal enrichment jobs.
+
+
 
 ## Why This Exists
 
