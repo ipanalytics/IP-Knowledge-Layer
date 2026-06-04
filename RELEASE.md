@@ -1,13 +1,13 @@
-# IP Knowledge Layer data-20260604-102725Z
+# IP Knowledge Layer data-20260604-160301Z
 
-Automated data release generated at `2026-06-04T10:27:25Z`.
+Automated data release generated at `2026-06-04T16:03:01Z`.
 
-GitHub Release: [data-20260604-102725Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260604-102725Z)
+GitHub Release: [data-20260604-160301Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260604-160301Z)
 
 ## Highlights
 
-- 130,154 normalized knowledge records
-- 130,154 prefix records
+- 130,150 normalized knowledge records
+- 130,150 prefix records
 - 0 ASN signals
 - 12 sources
 - 1 collector errors
@@ -47,7 +47,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | `hosting-cloud` | 100,155 |
 | `anonymity` | 11,541 |
 | `satellite-internet` | 11,264 |
-| `crawler-bot` | 7,194 |
+| `crawler-bot` | 7,190 |
 
 ## Top Providers
 
@@ -72,7 +72,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | `aws` | 15,996 |
 | `tor-radar` | 11,541 |
 | `sat-geoip` | 11,264 |
-| `crawler-scope` | 7,194 |
+| `crawler-scope` | 7,190 |
 | `github-meta` | 6,703 |
 | `oracle-cloud` | 1,078 |
 | `gcp-cloud` | 976 |
