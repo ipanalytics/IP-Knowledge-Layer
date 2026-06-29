@@ -1,13 +1,13 @@
-# IP Knowledge Layer data-20260628-195612Z
+# IP Knowledge Layer data-20260629-051605Z
 
-Automated data release generated at `2026-06-28T19:56:12Z`.
+Automated data release generated at `2026-06-29T05:16:05Z`.
 
-GitHub Release: [data-20260628-195612Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260628-195612Z)
+GitHub Release: [data-20260629-051605Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260629-051605Z)
 
 ## Highlights
 
-- 135,050 normalized knowledge records
-- 135,050 prefix records
+- 135,039 normalized knowledge records
+- 135,039 prefix records
 - 0 ASN signals
 - 12 sources
 - 1 collector errors
@@ -46,7 +46,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 |---|---:|
 | `hosting-cloud` | 102,195 |
 | `satellite-internet` | 14,123 |
-| `anonymity` | 11,427 |
+| `anonymity` | 11,416 |
 | `crawler-bot` | 7,305 |
 
 ## Top Providers
@@ -55,7 +55,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 |---|---:|
 | Azure | 76,120 |
 | AWS | 16,366 |
-| Tor | 11,427 |
+| Tor | 11,416 |
 | GitHub | 7,469 |
 | starlink | 5,865 |
 | viasat | 4,547 |
@@ -71,7 +71,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | `azure` | 76,120 |
 | `aws` | 16,366 |
 | `sat-geoip` | 14,123 |
-| `tor-radar` | 11,427 |
+| `tor-radar` | 11,416 |
 | `github-meta` | 7,469 |
 | `crawler-scope` | 7,305 |
 | `oracle-cloud` | 1,089 |
