@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20260630-100931Z
+# IP Knowledge Layer data-20260630-151557Z
 
-Automated data release generated at `2026-06-30T10:09:31Z`.
+Automated data release generated at `2026-06-30T15:15:57Z`.
 
-GitHub Release: [data-20260630-100931Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260630-100931Z)
+GitHub Release: [data-20260630-151557Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260630-151557Z)
 
 ## Highlights
 
-- 135,105 normalized knowledge records
-- 135,105 prefix records
+- 58,984 normalized knowledge records
+- 58,984 prefix records
 - 0 ASN signals
-- 12 sources
-- 1 collector errors
+- 11 sources
+- 2 collector errors
 
 ## Files To Pull
 
@@ -44,18 +44,17 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 102,205 |
+| `hosting-cloud` | 26,081 |
 | `satellite-internet` | 14,130 |
-| `anonymity` | 11,465 |
+| `anonymity` | 11,468 |
 | `crawler-bot` | 7,305 |
 
 ## Top Providers
 
 | Provider | Records |
 |---|---:|
-| Azure | 76,120 |
-| AWS | 16,382 |
-| Tor | 11,465 |
+| AWS | 16,378 |
+| Tor | 11,468 |
 | GitHub | 7,420 |
 | starlink | 5,873 |
 | viasat | 4,547 |
@@ -63,15 +62,15 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Amazon | 2,059 |
 | Oracle Cloud | 1,089 |
 | Google Cloud | 1,039 |
+| turksat | 953 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
-| `azure` | 76,120 |
-| `aws` | 16,382 |
+| `aws` | 16,378 |
 | `sat-geoip` | 14,130 |
-| `tor-radar` | 11,465 |
+| `tor-radar` | 11,468 |
 | `github-meta` | 7,420 |
 | `crawler-scope` | 7,305 |
 | `oracle-cloud` | 1,089 |
@@ -85,6 +84,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
+| `collect_azure` | `<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
