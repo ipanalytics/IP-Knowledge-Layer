@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20260706-160324Z
+# IP Knowledge Layer data-20260706-202947Z
 
-Automated data release generated at `2026-07-06T16:03:24Z`.
+Automated data release generated at `2026-07-06T20:29:47Z`.
 
-GitHub Release: [data-20260706-160324Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260706-160324Z)
+GitHub Release: [data-20260706-202947Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260706-202947Z)
 
 ## Highlights
 
-- 135,719 normalized knowledge records
-- 135,719 prefix records
+- 128,297 normalized knowledge records
+- 128,297 prefix records
 - 0 ASN signals
-- 12 sources
-- 1 collector errors
+- 11 sources
+- 2 collector errors
 
 ## Files To Pull
 
@@ -44,36 +44,35 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 102,196 |
+| `hosting-cloud` | 94,778 |
 | `satellite-internet` | 14,235 |
-| `anonymity` | 11,839 |
-| `crawler-bot` | 7,449 |
+| `anonymity` | 11,834 |
+| `crawler-bot` | 7,450 |
 
 ## Top Providers
 
 | Provider | Records |
 |---|---:|
 | Azure | 76,066 |
-| AWS | 16,427 |
-| Tor | 11,839 |
-| GitHub | 7,420 |
+| AWS | 16,429 |
+| Tor | 11,834 |
 | starlink | 5,885 |
 | viasat | 4,639 |
 | The Trade Desk | 2,615 |
 | Amazon | 2,059 |
 | Oracle Cloud | 1,089 |
 | Google Cloud | 1,039 |
+| DuckDuckGo | 958 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
 | `azure` | 76,066 |
-| `aws` | 16,427 |
+| `aws` | 16,429 |
 | `sat-geoip` | 14,235 |
-| `tor-radar` | 11,839 |
-| `crawler-scope` | 7,449 |
-| `github-meta` | 7,420 |
+| `tor-radar` | 11,834 |
+| `crawler-scope` | 7,450 |
 | `oracle-cloud` | 1,089 |
 | `gcp-cloud` | 1,039 |
 | `gcp-goog` | 112 |
@@ -85,6 +84,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
+| `collect_github` | `HTTP Error 403: rate limit exceeded` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
