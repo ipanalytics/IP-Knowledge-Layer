@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20260708-035644Z
+# IP Knowledge Layer data-20260708-090951Z
 
-Automated data release generated at `2026-07-08T03:56:44Z`.
+Automated data release generated at `2026-07-08T09:09:51Z`.
 
-GitHub Release: [data-20260708-035644Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260708-035644Z)
+GitHub Release: [data-20260708-090951Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260708-090951Z)
 
 ## Highlights
 
-- 128,251 normalized knowledge records
-- 128,251 prefix records
+- 135,597 normalized knowledge records
+- 135,597 prefix records
 - 0 ASN signals
-- 11 sources
-- 2 collector errors
+- 12 sources
+- 1 collector errors
 
 ## Files To Pull
 
@@ -44,9 +44,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 94,774 |
-| `satellite-internet` | 14,236 |
-| `anonymity` | 11,791 |
+| `hosting-cloud` | 102,122 |
+| `satellite-internet` | 14,231 |
+| `anonymity` | 11,794 |
 | `crawler-bot` | 7,450 |
 
 ## Top Providers
@@ -54,25 +54,26 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Provider | Records |
 |---|---:|
 | Azure | 76,066 |
-| AWS | 16,425 |
-| Tor | 11,791 |
-| starlink | 5,888 |
-| viasat | 4,639 |
+| AWS | 16,429 |
+| Tor | 11,794 |
+| GitHub | 7,344 |
+| starlink | 5,887 |
+| viasat | 4,636 |
 | The Trade Desk | 2,615 |
 | Amazon | 2,059 |
 | Oracle Cloud | 1,089 |
 | Google Cloud | 1,039 |
-| DuckDuckGo | 958 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
 | `azure` | 76,066 |
-| `aws` | 16,425 |
-| `sat-geoip` | 14,236 |
-| `tor-radar` | 11,791 |
+| `aws` | 16,429 |
+| `sat-geoip` | 14,231 |
+| `tor-radar` | 11,794 |
 | `crawler-scope` | 7,450 |
+| `github-meta` | 7,344 |
 | `oracle-cloud` | 1,089 |
 | `gcp-cloud` | 1,039 |
 | `gcp-goog` | 112 |
@@ -84,7 +85,6 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
-| `collect_github` | `HTTP Error 403: rate limit exceeded` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
