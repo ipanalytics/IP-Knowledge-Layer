@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20260721-200330Z
+# IP Knowledge Layer data-20260722-035859Z
 
-Automated data release generated at `2026-07-21T20:03:30Z`.
+Automated data release generated at `2026-07-22T03:58:59Z`.
 
-GitHub Release: [data-20260721-200330Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260721-200330Z)
+GitHub Release: [data-20260722-035859Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260722-035859Z)
 
 ## Highlights
 
-- 59,562 normalized knowledge records
-- 59,562 prefix records
+- 135,955 normalized knowledge records
+- 135,955 prefix records
 - 0 ASN signals
-- 11 sources
-- 2 collector errors
+- 12 sources
+- 1 collector errors
 
 ## Files To Pull
 
@@ -44,17 +44,18 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 25,963 |
+| `hosting-cloud` | 102,371 |
 | `satellite-internet` | 14,307 |
-| `anonymity` | 11,812 |
+| `anonymity` | 11,797 |
 | `crawler-bot` | 7,480 |
 
 ## Top Providers
 
 | Provider | Records |
 |---|---:|
-| AWS | 16,343 |
-| Tor | 11,812 |
+| Azure | 76,398 |
+| AWS | 16,353 |
+| Tor | 11,797 |
 | GitHub | 7,327 |
 | starlink | 5,974 |
 | viasat | 4,635 |
@@ -62,15 +63,15 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Amazon | 2,059 |
 | Oracle Cloud | 1,089 |
 | Google Cloud | 1,047 |
-| DuckDuckGo | 958 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
-| `aws` | 16,343 |
+| `azure` | 76,398 |
+| `aws` | 16,353 |
 | `sat-geoip` | 14,307 |
-| `tor-radar` | 11,812 |
+| `tor-radar` | 11,797 |
 | `crawler-scope` | 7,480 |
 | `github-meta` | 7,327 |
 | `oracle-cloud` | 1,089 |
@@ -84,7 +85,6 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
-| `collect_azure` | `HTTP Error 404: Not Found` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
