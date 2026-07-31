@@ -38,28 +38,28 @@ satellite internet provider, or a VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-07-30T20:03:48Z` |
-| Release | [data-20260730-200348Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260730-200348Z) |
-| Records | 136,539 |
-| Prefix records | 136,539 |
+| Updated | `2026-07-31T04:03:31Z` |
+| Release | [data-20260731-040331Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260731-040331Z) |
+| Records | 128,994 |
+| Prefix records | 128,994 |
 | ASN signals | 0 |
-| Sources | 12 |
-| Collector errors | 1 |
+| Sources | 11 |
+| Collector errors | 2 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 102,736 |
+| `hosting-cloud` | 95,317 |
 | `satellite-internet` | 14,547 |
-| `anonymity` | 11,741 |
+| `anonymity` | 11,615 |
 | `crawler-bot` | 7,515 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 76,573 |
-| AWS | 16,432 |
-| Tor | 11,741 |
-| GitHub | 7,425 |
+| AWS | 16,438 |
+| Tor | 11,615 |
 | starlink | 6,181 |
+| viasat | 4,663 |
 <!-- IPKL_SUMMARY_END -->
 
 ## Download URLs
