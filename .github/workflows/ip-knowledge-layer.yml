@@ -40,13 +40,13 @@ jobs:
           commit_message: "Update IP knowledge layer"
           file_pattern: "data README.md RELEASE.md"
 
-      - name: Publish data release
+      - name: Publish data release (rolling)
         env:
           GH_TOKEN: ${{ github.token }}
-          TAG: ${{ steps.release.outputs.tag }}
           GENERATED_AT: ${{ steps.release.outputs.generated_at }}
         run: |
-          gh release create "$TAG" \
+          gh release delete "data-current" --cleanup-tag --yes || true
+          gh release create "data-current" \
             --title "IP Knowledge Layer data $GENERATED_AT" \
             --latest \
             --notes-file RELEASE.md \
