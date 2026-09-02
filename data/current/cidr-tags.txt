@@ -93,6 +93,8 @@
 1.178.8.0/24 cloud,datacenter,hosting
 1.178.8.0/24 cloud,datacenter,hosting
 1.178.8.0/24 cloud,datacenter,hosting
+1.178.86.0/24 cloud,datacenter,hosting
+1.178.86.0/24 cloud,datacenter,hosting
 1.178.88.0/24 cloud,datacenter,hosting
 1.178.88.0/24 cloud,datacenter,hosting
 1.178.88.0/24 cloud,datacenter,hosting
@@ -725,7 +727,7 @@
 103.103.63.0/24 bgp_announced,bgp_only,geo,kacific,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 103.106.175.0/24 bgp_announced,bgp_only,geo,kacific,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 103.108.202.0/23 bgp_announced,bgp_only,geo,nbn,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
-103.109.100.207/32 anonymity-network,tor,tor-middle
+103.109.100.207/32 anonymity-network,tor,tor-guard
 103.109.101.105/32 anonymity-network,tor,tor-exit
 103.109.187.71/32 anonymity-network,tor,tor-exit
 103.11.160.0/24 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
@@ -2384,6 +2386,7 @@
 107.189.3.11/32 anonymity-network,tor,tor-exit
 107.189.30.236/32 anonymity-network,tor,tor-exit
 107.189.30.49/32 anonymity-network,tor,tor-exit
+107.189.30.69/32 anonymity-network,tor,tor-exit
 107.189.31.33/32 anonymity-network,tor,tor-exit
 107.189.31.52/32 anonymity-network,tor,tor-exit
 107.189.4.12/32 anonymity-network,tor,tor-exit
@@ -2778,7 +2781,7 @@
 109.236.83.11/32 anonymity-network,tor,tor-middle
 109.237.27.11/32 anonymity-network,tor,tor-exit
 109.238.11.6/32 anonymity-network,tor,tor-guard
-109.250.191.29/32 anonymity-network,tor,tor-middle
+109.250.188.52/32 anonymity-network,tor,tor-middle
 109.250.47.33/32 anonymity-network,tor,tor-middle
 109.255.184.38/32 anonymity-network,tor,tor-middle
 109.50.204.24/32 anonymity-network,tor,tor-guard
@@ -2812,7 +2815,7 @@
 109.72.55.162/32 anonymity-network,tor,tor-middle
 109.73.65.37/32 anonymity-network,tor,tor-guard
 109.76.209.185/32 anonymity-network,tor,tor-middle
-109.79.104.83/32 anonymity-network,tor,tor-middle
+109.79.61.126/32 anonymity-network,tor,tor-middle
 109.87.25.148/32 anonymity-network,tor,tor-guard
 109.90.31.112/32 anonymity-network,tor,tor-middle
 109.91.213.9/32 anonymity-network,tor,tor-middle
@@ -3741,7 +3744,7 @@
 129.222.145.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.146.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 129.222.146.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-129.222.147.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
+129.222.147.0/24 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.148.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 129.222.148.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.149.0/24 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -3818,7 +3821,7 @@
 129.222.197.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.198.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 129.222.198.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-129.222.199.0/24 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
+129.222.199.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.2.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 129.222.2.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 129.222.20.0/22 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
@@ -9783,7 +9786,7 @@
 141.3.63.26/32 anonymity-network,tor,tor-guard
 141.43.203.237/32 anonymity-network,tor,tor-middle
 141.76.72.140/32 anonymity-network,tor,tor-exit
-141.78.162.117/32 anonymity-network,tor,tor-middle
+141.78.149.167/32 anonymity-network,tor,tor-middle
 141.79.10.16/32 anonymity-network,tor,tor-guard
 141.8.0.0/16 bot,crawler,search
 141.94.36.111/32 anonymity-network,tor,tor-guard
@@ -10276,7 +10279,7 @@
 143.198.85.211/32 anonymity-network,tor,tor-guard
 143.20.166.14/32 anonymity-network,tor,tor-exit
 143.20.185.77/32 anonymity-network,tor,tor-exit
-143.20.64.228/32 anonymity-network,tor,tor-middle
+143.20.64.228/32 anonymity-network,tor,tor-guard
 143.20.69.94/32 anonymity-network,tor,tor-middle
 143.20.79.60/32 anonymity-network,tor,tor-middle
 143.20.97.140/32 anonymity-network,tor,tor-middle
@@ -10936,7 +10939,7 @@
 146.59.231.4/32 anonymity-network,tor,tor-exit
 146.59.94.31/32 anonymity-network,tor,tor-guard
 146.70.120.58/32 anonymity-network,tor,tor-guard
-146.70.57.10/32 anonymity-network,tor,tor-middle
+146.70.57.10/32 anonymity-network,tor,tor-guard
 146.70.80.101/32 anonymity-network,tor,tor-middle
 146.75.0.0/17 cdn,edge
 147.12.146.51/32 anonymity-network,tor,tor-middle
@@ -11053,7 +11056,6 @@
 148.116.64.0/19 cloud,datacenter,hosting
 148.135.195.141/32 anonymity-network,tor,tor-guard
 148.135.207.231/32 anonymity-network,tor,tor-middle
-148.135.207.49/32 anonymity-network,tor,tor-middle
 148.135.75.210/32 anonymity-network,tor,tor-exit
 148.222.128.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 148.222.128.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -11299,8 +11301,6 @@
 149.202.79.129/32 anonymity-network,tor,tor-exit
 149.202.85.99/32 anonymity-network,tor,tor-guard
 149.210.164.228/32 anonymity-network,tor,tor-middle
-149.224.40.83/32 anonymity-network,tor,tor-middle
-149.233.150.59/32 anonymity-network,tor,tor-middle
 149.248.54.124/32 anonymity-network,tor,tor-middle
 149.28.117.150/32 anonymity-network,tor,tor-guard
 149.28.132.118/32 anonymity-network,tor,tor-middle
@@ -11313,7 +11313,6 @@
 149.3.170.135/32 anonymity-network,tor,tor-guard
 149.5.190.60/32 anonymity-network,tor,tor-guard
 149.50.105.106/32 anonymity-network,tor,tor-guard
-149.50.53.231/32 anonymity-network,tor,tor-middle
 149.56.126.142/32 anonymity-network,tor,tor-guard
 149.56.13.232/32 anonymity-network,tor,tor-guard
 149.56.22.133/32 anonymity-network,tor,tor-guard
@@ -11880,7 +11879,7 @@
 15.201.1.0/24 cloud,datacenter,hosting
 15.204.103.3/32 anonymity-network,tor,tor-guard
 15.204.11.248/32 anonymity-network,tor,tor-guard
-15.204.11.249/32 anonymity-network,tor,tor-guard
+15.204.11.249/32 anonymity-network,tor,tor-middle
 15.204.122.84/32 anonymity-network,tor,tor-middle
 15.204.14.102/32 anonymity-network,tor,tor-guard
 15.204.140.9/32 anonymity-network,tor,tor-guard
@@ -13986,7 +13985,7 @@
 151.245.195.201/32 anonymity-network,tor,tor-guard
 151.245.35.163/32 ad-verification,bot,crawler
 151.33.24.133/32 anonymity-network,tor,tor-middle
-151.40.23.237/32 anonymity-network,tor,tor-middle
+151.40.243.58/32 anonymity-network,tor,tor-middle
 151.50.140.94/32 anonymity-network,tor,tor-middle
 151.59.152.82/32 anonymity-network,tor,tor-middle
 151.64.214.164/32 anonymity-network,tor,tor-middle
@@ -14517,7 +14516,7 @@
 152.53.32.167/32 anonymity-network,tor,tor-middle
 152.53.34.99/32 anonymity-network,tor,tor-middle
 152.53.47.136/32 anonymity-network,tor,tor-guard
-152.53.49.154/32 anonymity-network,tor,tor-guard
+152.53.49.154/32 anonymity-network,tor,tor-middle
 152.53.51.185/32 anonymity-network,tor,tor-guard
 152.53.55.222/32 anonymity-network,tor,tor-guard
 152.53.65.169/32 anonymity-network,tor,tor-guard
@@ -14565,7 +14564,7 @@
 152.70.88.0/21 cloud,datacenter,hosting
 152.70.96.0/20 cloud,datacenter,hosting
 152.86.6.232/32 anonymity-network,tor,tor-guard
-152.89.170.178/32 anonymity-network,tor,tor-guard
+152.89.170.178/32 anonymity-network,tor,tor-middle
 152.89.170.201/32 anonymity-network,tor,tor-middle
 152.89.254.37/32 anonymity-network,tor,tor-guard
 152.89.254.46/32 anonymity-network,tor,tor-guard
@@ -14986,7 +14985,7 @@
 153.67.111.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 153.67.112.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 153.67.112.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-153.67.113.0/24 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
+153.67.113.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 153.67.114.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 153.67.114.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 153.67.115.0/24 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -16081,6 +16080,7 @@
 159.195.58.11/32 anonymity-network,tor,tor-middle
 159.195.58.26/32 anonymity-network,tor,tor-middle
 159.195.63.213/32 anonymity-network,tor,tor-guard
+159.195.7.151/32 anonymity-network,tor,tor-middle
 159.195.82.190/32 anonymity-network,tor,tor-guard
 159.195.83.35/32 anonymity-network,tor,tor-guard
 159.196.0.0/18 bgp_announced,bgp_only,geo,nbn,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
@@ -18450,6 +18450,7 @@
 170.133.7.51/32 anonymity-network,tor,tor-middle
 170.168.103.177/32 anonymity-network,tor,tor-middle
 170.187.142.195/32 anonymity-network,tor,tor-guard
+170.187.164.35/32 anonymity-network,tor,tor-middle
 170.187.201.115/32 anonymity-network,tor,tor-guard
 170.203.192.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 170.203.192.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -21115,6 +21116,7 @@
 173.249.194.7/32 anonymity-network,tor,tor-guard
 173.249.195.122/32 anonymity-network,tor,tor-middle
 173.249.195.87/32 anonymity-network,tor,tor-guard
+173.249.210.98/32 anonymity-network,tor,tor-middle
 173.249.214.152/32 anonymity-network,tor,tor-guard
 173.249.214.163/32 anonymity-network,tor,tor-guard
 173.249.214.194/32 anonymity-network,tor,tor-guard
@@ -21337,7 +21339,7 @@
 174.88.165.227/32 anonymity-network,tor,tor-guard
 174.91.123.141/32 anonymity-network,tor,tor-middle
 174.91.24.202/32 anonymity-network,tor,tor-guard
-174.95.235.110/32 anonymity-network,tor,tor-middle
+174.95.235.2/32 anonymity-network,tor,tor-middle
 175.111.1.0/24 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,space42
 175.111.10.0/23 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,space42
 175.111.12.0/23 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,space42
@@ -21661,7 +21663,7 @@
 178.198.225.241/32 anonymity-network,tor,tor-guard
 178.20.55.16/32 anonymity-network,tor,tor-exit
 178.20.55.182/32 anonymity-network,tor,tor-exit
-178.200.106.68/32 anonymity-network,tor,tor-middle
+178.200.106.68/32 anonymity-network,tor,tor-guard
 178.200.168.70/32 anonymity-network,tor,tor-middle
 178.208.187.197/32 anonymity-network,tor,tor-guard
 178.208.87.121/32 anonymity-network,tor,tor-middle
@@ -21806,7 +21808,7 @@
 178.236.254.48/32 anonymity-network,tor,tor-middle
 178.239.17.187/32 anonymity-network,tor,tor-middle
 178.239.19.27/32 anonymity-network,tor,tor-guard
-178.24.214.140/32 anonymity-network,tor,tor-guard
+178.24.214.140/32 anonymity-network,tor,tor-middle
 178.251.144.70/32 anonymity-network,tor,tor-middle
 178.254.18.25/32 anonymity-network,tor,tor-middle
 178.254.20.235/32 anonymity-network,tor,tor-middle
@@ -21816,7 +21818,6 @@
 178.254.45.64/32 anonymity-network,tor,tor-guard
 178.255.220.24/32 anonymity-network,tor,tor-guard
 178.32.136.221/32 anonymity-network,tor,tor-guard
-178.32.136.221/32 anonymity-network,tor,tor-middle
 178.32.139.118/32 anonymity-network,tor,tor-guard
 178.32.143.167/32 anonymity-network,tor,tor-guard
 178.32.41.33/32 anonymity-network,tor,tor-guard
@@ -22049,7 +22050,7 @@
 179.43.159.202/32 anonymity-network,tor,tor-middle
 179.43.159.78/32 anonymity-network,tor,tor-exit
 179.43.160.164/32 anonymity-network,tor,tor-guard
-179.43.166.250/32 anonymity-network,tor,tor-guard
+179.43.166.250/32 anonymity-network,tor,tor-middle
 179.43.169.17/32 anonymity-network,tor,tor-guard
 179.43.175.235/32 anonymity-network,tor,tor-guard
 179.43.176.6/32 anonymity-network,tor,tor-exit
@@ -24582,11 +24583,9 @@
 185.10.7.211/32 ad-verification,bot,crawler
 185.10.7.28/32 ad-verification,bot,crawler
 185.100.85.132/32 anonymity-network,tor,tor-exit
-185.100.85.223/32 anonymity-network,tor,tor-guard
 185.100.85.24/32 anonymity-network,tor,tor-exit
 185.100.85.25/32 anonymity-network,tor,tor-exit
 185.100.86.70/32 anonymity-network,tor,tor-guard
-185.100.87.136/32 anonymity-network,tor,tor-exit
 185.100.87.140/32 anonymity-network,tor,tor-exit
 185.100.87.141/32 anonymity-network,tor,tor-guard
 185.100.87.141/32 anonymity-network,tor,tor-middle
@@ -24712,7 +24711,6 @@
 185.136.44.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 185.136.46.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 185.136.47.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
-185.14.28.247/32 anonymity-network,tor,tor-guard
 185.14.30.57/32 anonymity-network,tor,tor-guard
 185.140.209.158/32 anonymity-network,tor,tor-guard
 185.141.216.154/32 anonymity-network,tor,tor-guard
@@ -24764,7 +24762,7 @@
 185.155.196.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 185.16.38.185/32 anonymity-network,tor,tor-middle
 185.16.60.55/32 anonymity-network,tor,tor-guard
-185.162.126.192/32 anonymity-network,tor,tor-middle
+185.162.126.192/32 anonymity-network,tor,tor-guard
 185.162.249.126/32 anonymity-network,tor,tor-guard
 185.162.251.122/32 anonymity-network,tor,tor-guard
 185.162.251.94/32 anonymity-network,tor,tor-guard
@@ -24790,7 +24788,7 @@
 185.177.127.34/32 anonymity-network,tor,tor-guard
 185.177.127.72/32 anonymity-network,tor,tor-guard
 185.177.229.228/32 anonymity-network,tor,tor-guard
-185.18.221.13/32 anonymity-network,tor,tor-guard
+185.18.221.13/32 anonymity-network,tor,tor-middle
 185.18.221.51/32 anonymity-network,tor,tor-middle
 185.180.12.65/32 bot,crawler,monitoring
 185.181.60.181/32 anonymity-network,tor,tor-guard
@@ -25003,7 +25001,6 @@
 185.220.101.205/32 anonymity-network,tor,tor-guard
 185.220.101.206/32 anonymity-network,tor,tor-guard
 185.220.101.207/32 anonymity-network,tor,tor-guard
-185.220.101.207/32 anonymity-network,tor,tor-middle
 185.220.101.208/32 anonymity-network,tor,tor-guard
 185.220.101.209/32 anonymity-network,tor,tor-guard
 185.220.101.21/32 anonymity-network,tor,tor-exit
@@ -25110,6 +25107,7 @@
 185.230.161.224/32 anonymity-network,tor,tor-middle
 185.231.101.141/32 anonymity-network,tor,tor-guard
 185.231.101.53/32 anonymity-network,tor,tor-exit
+185.231.32.33/32 anonymity-network,tor,tor-exit
 185.231.33.38/32 anonymity-network,tor,tor-exit
 185.232.68.247/32 anonymity-network,tor,tor-guard
 185.232.68.32/32 anonymity-network,tor,tor-guard
@@ -25362,6 +25360,7 @@
 186.208.36.0/22 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
 186.208.44.0/22 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
 186.208.46.0/24 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
+186.210.102.105/32 anonymity-network,tor,tor-middle
 186.222.207.121/32 anonymity-network,tor,tor-exit
 186.23.77.164/32 anonymity-network,tor,tor-middle
 186.233.185.59/32 anonymity-network,tor,tor-guard
@@ -25386,7 +25385,7 @@
 187.168.0.206/32 anonymity-network,tor,tor-middle
 187.168.149.65/32 anonymity-network,tor,tor-middle
 187.21.222.222/32 anonymity-network,tor,tor-exit
-187.213.74.95/32 anonymity-network,tor,tor-middle
+187.211.9.122/32 anonymity-network,tor,tor-middle
 187.77.245.105/32 anonymity-network,tor,tor-middle
 187.78.0.0/17 google,internet-platform
 187.79.0.0/17 google,internet-platform
@@ -25419,6 +25418,7 @@
 188.126.83.38/32 anonymity-network,tor,tor-guard
 188.127.197.42/32 anonymity-network,tor,tor-middle
 188.129.124.117/32 anonymity-network,tor,tor-guard
+188.136.253.2/32 anonymity-network,tor,tor-middle
 188.136.46.4/32 anonymity-network,tor,tor-guard
 188.138.112.60/32 anonymity-network,tor,tor-guard
 188.141.60.190/32 anonymity-network,tor,tor-middle
@@ -25444,7 +25444,7 @@
 188.166.216.124/32 anonymity-network,tor,tor-guard
 188.166.87.136/32 anonymity-network,tor,tor-middle
 188.172.228.104/32 anonymity-network,tor,tor-middle
-188.174.194.99/32 anonymity-network,tor,tor-middle
+188.174.205.122/32 anonymity-network,tor,tor-middle
 188.175.90.3/32 anonymity-network,tor,tor-middle
 188.190.107.50/32 bot,crawler,seo
 188.192.200.47/32 anonymity-network,tor,tor-middle
@@ -26595,7 +26595,7 @@
 192.42.116.110/32 anonymity-network,tor,tor-exit
 192.42.116.110/32 anonymity-network,tor,tor-guard
 192.42.116.111/32 anonymity-network,tor,tor-exit
-192.42.116.111/32 anonymity-network,tor,tor-guard
+192.42.116.111/32 anonymity-network,tor,tor-middle
 192.42.116.112/32 anonymity-network,tor,tor-exit
 192.42.116.112/32 anonymity-network,tor,tor-guard
 192.42.116.113/32 anonymity-network,tor,tor-exit
@@ -26891,7 +26891,6 @@
 193.149.80.0/21 ci,developer-platform,git-hosting
 193.149.88.0/21 cloud,datacenter,hosting
 193.149.88.0/21 ci,developer-platform,git-hosting
-193.152.155.51/32 anonymity-network,tor,tor-middle
 193.160.96.55/32 anonymity-network,tor,tor-middle
 193.161.202.84/32 anonymity-network,tor,tor-middle
 193.163.204.6/32 anonymity-network,tor,tor-middle
@@ -26906,6 +26905,7 @@
 193.182.111.43/32 anonymity-network,tor,tor-guard
 193.186.4.0/24 google,internet-platform
 193.187.91.79/32 anonymity-network,tor,tor-guard
+193.187.91.79/32 anonymity-network,tor,tor-middle
 193.189.100.194/32 anonymity-network,tor,tor-exit
 193.189.100.195/32 anonymity-network,tor,tor-exit
 193.189.100.196/32 anonymity-network,tor,tor-exit
@@ -27091,7 +27091,7 @@
 194.230.121.43/32 anonymity-network,tor,tor-guard
 194.233.73.59/32 anonymity-network,tor,tor-guard
 194.233.75.85/32 anonymity-network,tor,tor-guard
-194.26.141.87/32 anonymity-network,tor,tor-guard
+194.26.141.87/32 anonymity-network,tor,tor-middle
 194.26.192.203/32 anonymity-network,tor,tor-exit
 194.26.192.254/32 anonymity-network,tor,tor-exit
 194.26.192.37/32 anonymity-network,tor,tor-exit
@@ -27218,10 +27218,11 @@
 195.47.238.176/32 anonymity-network,tor,tor-exit
 195.47.238.177/32 anonymity-network,tor,tor-exit
 195.47.238.50/32 anonymity-network,tor,tor-exit
-195.52.157.108/32 anonymity-network,tor,tor-middle
-195.52.185.151/32 anonymity-network,tor,tor-middle
+195.52.169.96/32 anonymity-network,tor,tor-middle
+195.52.182.36/32 anonymity-network,tor,tor-middle
 195.58.146.70/32 anonymity-network,tor,tor-middle
 195.58.58.72/32 anonymity-network,tor,tor-guard
+195.63.44.191/32 anonymity-network,tor,tor-middle
 195.66.216.177/32 bot,crawler,seo
 195.69.173.199/32 anonymity-network,tor,tor-guard
 195.69.176.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
@@ -27725,8 +27726,6 @@
 199.96.76.0/23 bgp_announced,bgp_only,geo_or_multi_orbit,intelsat,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 2.124.203.59/32 anonymity-network,tor,tor-middle
 2.155.51.149/32 anonymity-network,tor,tor-middle
-2.241.240.59/32 anonymity-network,tor,tor-middle
-2.243.226.205/32 anonymity-network,tor,tor-middle
 2.249.153.60/32 anonymity-network,tor,tor-middle
 2.26.140.0/24 bgp_announced,bgp_only,castor_marine,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider
 2.27.170.185/32 anonymity-network,tor,tor-guard
@@ -43357,7 +43356,7 @@
 2001:1680:101:43f::1/128 anonymity-network,tor,tor-guard
 2001:1680:101:84a::1/128 anonymity-network,tor,tor-middle
 2001:1680:101:9be::1/128 anonymity-network,tor,tor-middle
-2001:1711:fa4e:7040:a3a:88ff:fe6e:d46b/128 anonymity-network,tor,tor-middle
+2001:1711:fa4e:7040:a3a:88ff:fe6e:d46b/128 anonymity-network,tor,tor-guard
 2001:1900:5:2:2::583a/128 anonymity-network,tor,tor-guard
 2001:1900:5:2:2::583b/128 anonymity-network,tor,tor-guard
 2001:1970:3c59:4102::2000/128 anonymity-network,tor,tor-middle
@@ -43723,7 +43722,7 @@
 2001:470:1f08:4c7::2/128 anonymity-network,tor,tor-middle
 2001:470:1f09:3d0::4fc0/128 anonymity-network,tor,tor-middle
 2001:470:1f0b:c3::1337:c0de/128 anonymity-network,tor,tor-middle
-2001:470:1f10:53c::2/128 anonymity-network,tor,tor-middle
+2001:470:1f10:53c::2/128 anonymity-network,tor,tor-guard
 2001:470:1f11:617::10a/128 anonymity-network,tor,tor-middle
 2001:470:1f14:4ea::2/128 anonymity-network,tor,tor-middle
 2001:470:1f15:16b::1337:c0de/128 anonymity-network,tor,tor-middle
@@ -43742,7 +43741,6 @@
 2001:470:dd6d::21/128 anonymity-network,tor,tor-guard
 2001:470:deb8:a1::2/128 anonymity-network,tor,tor-guard
 2001:470:e01f:700::20/128 anonymity-network,tor,tor-guard
-2001:470:ec1b::16/128 anonymity-network,tor,tor-middle
 2001:4801:7827:102:be76:4eff:fe10:12a5/128 anonymity-network,tor,tor-middle
 2001:4860:4801:10::/60 bot,crawler,search
 2001:4860:4801:2008::/64 bot,crawler,search
@@ -43791,7 +43789,6 @@
 2001:48f8:11:1:f0a3:ec2a:4447:7882/128 anonymity-network,tor,tor-middle
 2001:4b98:dc0:43:f816:3eff:fea2:e670/128 anonymity-network,tor,tor-guard
 2001:4b98:dc0:45:216:3eff:feb7:79bc/128 anonymity-network,tor,tor-middle
-2001:4ba0:cafe:1267::1/128 anonymity-network,tor,tor-guard
 2001:4ba0:cafe:2e0::1/128 anonymity-network,tor,tor-guard
 2001:4ba0:cafe:9da::1/128 anonymity-network,tor,tor-guard
 2001:4ba0:cafe:a28::1/128 anonymity-network,tor,tor-middle
@@ -43809,7 +43806,7 @@
 2001:4ba0:ffff:e6:200::208/128 anonymity-network,tor,tor-guard
 2001:4dd0:32b1:32de::a04d:cc9f/128 anonymity-network,tor,tor-guard
 2001:550:5a00:7348::1/128 anonymity-network,tor,tor-guard
-2001:558:6017:b1:95ae:955b:b3e8:a458/128 anonymity-network,tor,tor-guard
+2001:558:6017:b1:95ae:955b:b3e8:a458/128 anonymity-network,tor,tor-middle
 2001:559:327:231::84/128 anonymity-network,tor,tor-guard
 2001:559:327:231::84/128 anonymity-network,tor,tor-middle
 2001:569:5a40:eb00::104/128 anonymity-network,tor,tor-guard
@@ -44201,7 +44198,7 @@
 2001:67c:e60:c0c:192:42:116:110/128 anonymity-network,tor,tor-exit
 2001:67c:e60:c0c:192:42:116:110/128 anonymity-network,tor,tor-guard
 2001:67c:e60:c0c:192:42:116:111/128 anonymity-network,tor,tor-exit
-2001:67c:e60:c0c:192:42:116:111/128 anonymity-network,tor,tor-guard
+2001:67c:e60:c0c:192:42:116:111/128 anonymity-network,tor,tor-middle
 2001:67c:e60:c0c:192:42:116:112/128 anonymity-network,tor,tor-exit
 2001:67c:e60:c0c:192:42:116:112/128 anonymity-network,tor,tor-guard
 2001:67c:e60:c0c:192:42:116:113/128 anonymity-network,tor,tor-exit
@@ -44422,12 +44419,11 @@
 2001:9b0:25e:f700:d8a9:3d17:87c4:2d6f/128 anonymity-network,tor,tor-exit
 2001:9b1:9bd0::73/128 anonymity-network,tor,tor-guard
 2001:9b1:9bd0::74/128 anonymity-network,tor,tor-guard
-2001:9e8:1a6e:8100:0:dead:beef:cafe/128 anonymity-network,tor,tor-middle
-2001:9e8:8a:5f00:8aa2:9eff:fedc:acc8/128 anonymity-network,tor,tor-middle
-2001:9e8:8a:8300:d250:99ff:fec2:ffb3/128 anonymity-network,tor,tor-middle
+2001:9e8:1a7c:d000:0:dead:beef:cafe/128 anonymity-network,tor,tor-middle
+2001:9e8:a1:9a00:d250:99ff:fec2:ffb3/128 anonymity-network,tor,tor-middle
 2001:ac8:40:113:0:1:bf3d:ca1c/128 anonymity-network,tor,tor-guard
 2001:ac8:8b:81:700:ad72:5823:ba84/128 anonymity-network,tor,tor-middle
-2001:b011:12:f2e3:3840:692b:51a2:1d66/128 anonymity-network,tor,tor-middle
+2001:b011:12:3fc8:1bc:be50:bfdd:fabf/128 anonymity-network,tor,tor-middle
 2001:b011:4006:d615::b/128 anonymity-network,tor,tor-exit
 2001:b011:7008:57e6:bead:f3c9:f4ba:13c1/128 anonymity-network,tor,tor-middle
 2001:b030:2422::7234/128 anonymity-network,tor,tor-exit
@@ -44527,7 +44523,6 @@
 2003:e3:df4e:7e00:9618:82ff:fe16:2de4/128 anonymity-network,tor,tor-middle
 2003:e6:731:c700:2ecf:67ff:fe71:a4f5/128 anonymity-network,tor,tor-middle
 2003:e9:d723:d901:3c3a:92ff:fec1:b4a4/128 anonymity-network,tor,tor-guard
-2003:ec:ff12:3000:52af:73ff:fe21:af5a/128 anonymity-network,tor,tor-middle
 2003:f2:4f41:d600:6c07:5bff:feb4:2e34/128 anonymity-network,tor,tor-middle
 2003:f3:b700:f800:230:59ff:fe22:317b/128 anonymity-network,tor,tor-guard
 2003:f3:b700:f800:5054:ff:fe99:64da/128 anonymity-network,tor,tor-middle
@@ -44559,7 +44554,6 @@
 201.33.8.0/24 bgp_announced,bgp_only,geo,hispasat,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 201.33.9.0/24 bgp_announced,bgp_only,geo,hispasat,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 201.79.10.120/32 anonymity-network,tor,tor-middle
-201.83.242.41/32 anonymity-network,tor,tor-exit
 202.125.100.0/24 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 202.125.100.0/26 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 202.125.100.128/28 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -44586,7 +44580,7 @@
 202.153.222.0/23 bgp_announced,bgp_only,geo,nbn,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 202.155.8.78/32 anonymity-network,tor,tor-guard
 202.161.128.0/19 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,telesat
-202.165.173.58/32 anonymity-network,tor,tor-guard
+202.165.173.58/32 anonymity-network,tor,tor-middle
 202.171.168.51/32 anonymity-network,tor,tor-middle
 202.174.130.0/24 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
 202.174.132.0/22 cloud,datacenter,hosting
@@ -45525,7 +45519,7 @@
 207.216.33.238/32 anonymity-network,tor,tor-middle
 207.223.160.0/20 google,internet-platform
 207.226.47.0/24 bgp_announced,bgp_only,geo,gilat,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
-207.229.65.155/32 anonymity-network,tor,tor-guard
+207.229.65.155/32 anonymity-network,tor,tor-middle
 207.229.96.0/24 bgp_announced,bgp_only,gogo,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider
 207.241.174.0/24 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_service_provider,speedcast
 207.241.175.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
@@ -45925,6 +45919,7 @@
 211.249.46.24/29 bot,crawler,search
 211.249.46.32/27 bot,crawler,search
 211.249.46.64/26 bot,crawler,search
+212.100.63.77/32 anonymity-network,tor,tor-middle
 212.105.128.0/23 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 212.105.128.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 212.105.129.0/24 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -46001,7 +45996,7 @@
 212.132.78.65/32 anonymity-network,tor,tor-guard
 212.132.97.190/32 anonymity-network,tor,tor-middle
 212.132.97.196/32 anonymity-network,tor,tor-middle
-212.146.152.13/32 anonymity-network,tor,tor-middle
+212.146.153.225/32 anonymity-network,tor,tor-middle
 212.154.101.173/32 anonymity-network,tor,tor-middle
 212.159.69.155/32 anonymity-network,tor,tor-guard
 212.16.34.0/23 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
@@ -46821,6 +46816,7 @@
 217.154.85.211/32 anonymity-network,tor,tor-guard
 217.155.213.136/32 anonymity-network,tor,tor-middle
 217.155.3.245/32 anonymity-network,tor,tor-guard
+217.155.40.118/32 anonymity-network,tor,tor-middle
 217.155.56.141/32 anonymity-network,tor,tor-guard
 217.156.49.33/32 anonymity-network,tor,tor-exit
 217.156.67.25/32 anonymity-network,tor,tor-middle
@@ -46913,7 +46909,7 @@
 217.81.85.120/32 anonymity-network,tor,tor-middle
 217.83.162.143/32 anonymity-network,tor,tor-middle
 217.84.233.121/32 anonymity-network,tor,tor-middle
-217.87.69.209/32 anonymity-network,tor,tor-middle
+217.87.68.94/32 anonymity-network,tor,tor-middle
 217.9.19.167/32 bot,crawler,seo
 217.9.20.0/22 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,telesat
 217.94.159.215/32 anonymity-network,tor,tor-middle
@@ -48143,7 +48139,7 @@
 24.191.62.109/32 anonymity-network,tor,tor-middle
 24.196.214.71/32 anonymity-network,tor,tor-middle
 24.196.236.15/32 anonymity-network,tor,tor-middle
-24.217.229.36/32 anonymity-network,tor,tor-middle
+24.217.229.36/32 anonymity-network,tor,tor-guard
 24.220.69.44/32 anonymity-network,tor,tor-guard
 24.23.174.66/32 anonymity-network,tor,tor-middle
 24.253.238.23/32 anonymity-network,tor,tor-middle
@@ -48351,6 +48347,7 @@
 2403:5806:6668:30:be24:11ff:fe58:3b48/128 anonymity-network,tor,tor-guard
 2403:5806:e8d0::feed:beef:cafe/128 anonymity-network,tor,tor-middle
 2403:5809:7215::cafe:cafe/128 anonymity-network,tor,tor-middle
+2403:6200:8856:1746::16/128 anonymity-network,tor,tor-middle
 2403:b300::/48 cloud,datacenter,hosting
 2403:b300:ff00::/48 cloud,datacenter,hosting
 2403:b300:ff00::/48 cloud,datacenter,hosting
@@ -51438,7 +51435,7 @@
 2600:2b00:93e8:6fe:be24:11ff:fed2:de00/128 anonymity-network,tor,tor-middle
 2600:2b00:93e8:6fe:be24:11ff:fed6:7483/128 anonymity-network,tor,tor-middle
 2600:2b00:93e8:6fe:be24:11ff:fedf:512e/128 anonymity-network,tor,tor-middle
-2600:2b00:93e8:6fe:be24:11ff:fee7:f3d8/128 anonymity-network,tor,tor-middle
+2600:2b00:93e8:6fe:be24:11ff:fee7:f3d8/128 anonymity-network,tor,tor-guard
 2600:3c00::2000:15ff:fef7:db0e/128 anonymity-network,tor,tor-guard
 2600:3c00::2000:25ff:fe6b:704e/128 anonymity-network,tor,tor-guard
 2600:3c00::2000:39ff:fe3f:8a76/128 anonymity-network,tor,tor-guard
@@ -51562,6 +51559,7 @@
 2600:3c03::f03c:91ff:fedb:19ed/128 anonymity-network,tor,tor-middle
 2600:3c03::f03c:91ff:fedf:407b/128 anonymity-network,tor,tor-middle
 2600:3c03::f03c:91ff:fee7:bd31/128 anonymity-network,tor,tor-middle
+2600:3c03::f03c:93ff:fea3:897b/128 anonymity-network,tor,tor-middle
 2600:3c03::f03c:93ff:fed9:3504/128 anonymity-network,tor,tor-middle
 2600:3c03::f03c:95ff:fe5d:562/128 anonymity-network,tor,tor-exit
 2600:3c03:e000:19f:0:11:11:11/128 anonymity-network,tor,tor-guard
@@ -51597,7 +51595,7 @@
 2600:4040:b0fc:e700:7285:c2ff:fed3:c3c/128 anonymity-network,tor,tor-guard
 2600:6800::/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 2600:6801:3400::/40 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
-2600:6c40:6100:1d08:8898:347a:71b8:e789/128 anonymity-network,tor,tor-middle
+2600:6c40:6100:1d08:8898:347a:71b8:e789/128 anonymity-network,tor,tor-guard
 2600:6c60:3000:208:3bd1:565b:d688:218b/128 anonymity-network,tor,tor-middle
 2600:9000:1000::/36 cloud,datacenter,hosting
 2600:9000:1000::/36 cloud,datacenter,hosting
@@ -53295,7 +53293,7 @@
 2602:81c:1000:179::236/128 anonymity-network,tor,tor-middle
 2602:81c:1000:179::237/128 anonymity-network,tor,tor-middle
 2602:81c:1000:179::238/128 anonymity-network,tor,tor-middle
-2602:ae:157f:4001:1caa:5346:d726:617e/128 anonymity-network,tor,tor-middle
+2602:ae:157f:4001:49f4:7747:a19c:31fc/128 anonymity-network,tor,tor-middle
 2602:f687:1:1:dcdb:abff:fe3f:f90a/128 anonymity-network,tor,tor-guard
 2602:f6f6:2:2634::1/128 anonymity-network,tor,tor-exit
 2602:f6f6:2:3637::1/128 anonymity-network,tor,tor-exit
@@ -53400,6 +53398,8 @@
 2602:fcc0:3334:fb06::1/128 anonymity-network,tor,tor-middle
 2602:fccf:100:3::14/128 anonymity-network,tor,tor-exit
 2602:fccf:100:3::15/128 anonymity-network,tor,tor-guard
+2602:fccf:310:1:be24:11ff:fe11:7832/128 anonymity-network,tor,tor-exit
+2602:fccf:310:1:be24:11ff:fe99:59b/128 anonymity-network,tor,tor-exit
 2602:fd5e:1:2::/64 cloud,datacenter,hosting
 2602:fd5e:1:2::/64 cloud,datacenter,hosting
 2602:fd5e:1:2::/64 ci,developer-platform,git-hosting
@@ -71993,7 +71993,7 @@
 2604:2dc0:202:300::13/128 anonymity-network,tor,tor-guard
 2604:2dc0:202:300::1579/128 anonymity-network,tor,tor-guard
 2604:2dc0:202:300::1642/128 anonymity-network,tor,tor-guard
-2604:2dc0:202:300::1f/128 anonymity-network,tor,tor-guard
+2604:2dc0:202:300::1f/128 anonymity-network,tor,tor-middle
 2604:2dc0:202:300::2aae/128 anonymity-network,tor,tor-guard
 2604:2dc0:202:300::581/128 anonymity-network,tor,tor-guard
 2604:2dc0:202:300::995/128 anonymity-network,tor,tor-guard
@@ -72149,7 +72149,6 @@
 2605:59c0:3c80::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:3d00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:3e00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-2605:59c0:3e00::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:3e80::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:3f00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:4000::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -72246,6 +72245,7 @@
 2605:59c0:5800::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:5900::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:5a00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
+2605:59c0:5a00::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:5b00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:5c00::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c0:6000::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -72380,6 +72380,8 @@
 2605:59c1:4480::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c1:4500::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c1:4680::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
+2605:59c1:4700::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
+2605:59c1:4780::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59c1:4800::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c1:4c00::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59c1:800::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -72706,7 +72708,6 @@
 2605:59ca:8700::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59ca:8800::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59ca:8900::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-2605:59ca:8900::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2605:59ca:8a00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59ca:8b00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2605:59ca:8c00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -73597,7 +73598,6 @@
 2607:5300:205:200::7626/128 anonymity-network,tor,tor-guard
 2607:5300:205:200::7d8e/128 anonymity-network,tor,tor-guard
 2607:5300:205:200::a96/128 anonymity-network,tor,tor-guard
-2607:5300:205:200::aa65/128 anonymity-network,tor,tor-middle
 2607:5300:205:200::b27f/128 anonymity-network,tor,tor-middle
 2607:5300:205:200::b4f/128 anonymity-network,tor,tor-guard
 2607:5300:60:6a85::46/128 anonymity-network,tor,tor-guard
@@ -73609,6 +73609,7 @@
 2607:5dc0:1:c::6cd0:a770/128 anonymity-network,tor,tor-guard
 2607:9000:0:19::c4b:a312/128 anonymity-network,tor,tor-guard
 2607:9000:100:206:bc93:e512:e8f2:50a6/128 anonymity-network,tor,tor-middle
+2607:9000:800:5054::a/128 anonymity-network,tor,tor-middle
 2607:9000:9000:106f::a/128 anonymity-network,tor,tor-middle
 2607:9d00:2000:16a::5c51:7711/128 anonymity-network,tor,tor-middle
 2607:9d00:2000:1bd::9109:696e/128 anonymity-network,tor,tor-middle
@@ -74246,7 +74247,6 @@
 2803:9810:7400::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:8000::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:800::/38 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-2803:9810:800::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:8400::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:8500::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:8600::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -74265,8 +74265,6 @@
 2803:9810:b600::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:b700::/40 bgp_not_announced,geoip_valid,leo,planned_not_announced,pop_present,prefix_only_in_geofeed,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:b800::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
-2803:9810:b800::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
-2803:9810:b880::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:b900::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:ba00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2803:9810:bb00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -74309,6 +74307,7 @@
 2a00:11c0:47:1e35:981d:1bff:fe6b:660e/128 anonymity-network,tor,tor-guard
 2a00:11c0:47:1e7e::/128 anonymity-network,tor,tor-exit
 2a00:11c0:5f:22f9:e47e:74ff:fe72:a4b2/128 anonymity-network,tor,tor-guard
+2a00:11c0:5f:4522:b86e:7fff:fee4:92b6/128 anonymity-network,tor,tor-middle
 2a00:11c0:60:2cf:d8b5:30ff:fe27:f208/128 anonymity-network,tor,tor-guard
 2a00:1210:0:fe::407:5479/128 anonymity-network,tor,tor-middle
 2a00:1398:5:f604:cafe:cafe:cafe:9001/128 anonymity-network,tor,tor-guard
@@ -75575,7 +75574,6 @@
 2a01:239:328:5900::1/128 anonymity-network,tor,tor-middle
 2a01:239:33d:2e00::1/128 anonymity-network,tor,tor-guard
 2a01:239:33e:600::1/128 anonymity-network,tor,tor-guard
-2a01:239:33e:be00::1/128 anonymity-network,tor,tor-middle
 2a01:239:351:4100::1/128 anonymity-network,tor,tor-guard
 2a01:239:353:1400::1/128 anonymity-network,tor,tor-middle
 2a01:239:353:8d00::1/128 anonymity-network,tor,tor-middle
@@ -75862,6 +75860,7 @@
 2a01:4f9:3070:2c54::120/128 anonymity-network,tor,tor-guard
 2a01:4f9:3070:2c54::124/128 anonymity-network,tor,tor-guard
 2a01:4f9:3100:4760::2/128 anonymity-network,tor,tor-guard
+2a01:4f9:3b:40a9::11/128 anonymity-network,tor,tor-guard
 2a01:4f9:3b:468e::13/128 anonymity-network,tor,tor-guard
 2a01:4f9:4a:1812::2/128 anonymity-network,tor,tor-guard
 2a01:4f9:4a:264d::2/128 anonymity-network,tor,tor-middle
@@ -75978,7 +75977,7 @@
 2a01:5e0:36:cb09::1/128 anonymity-network,tor,tor-middle
 2a01:5e0:36:cb0f::1/128 anonymity-network,tor,tor-middle
 2a01:5e0:36:cb5a::1/128 anonymity-network,tor,tor-middle
-2a01:5e0:36:ccd0::1/128 anonymity-network,tor,tor-middle
+2a01:5e0:36:ccd0::1/128 anonymity-network,tor,tor-guard
 2a01:5e0:36:ce3e::1/128 anonymity-network,tor,tor-middle
 2a01:5e0:36:cf2a::1/128 anonymity-network,tor,tor-exit
 2a01:6560:0:102::103:10/128 anonymity-network,tor,tor-exit
@@ -76178,7 +76177,7 @@
 2a02:a03f:ca02:7800:9657:a5ff:fe64:1d88/128 anonymity-network,tor,tor-guard
 2a02:a445:4f0f:0:397c:e568:dd49:ed4d/128 anonymity-network,tor,tor-guard
 2a02:a448:c936:0:d63d:7eff:fe49:df37/128 anonymity-network,tor,tor-middle
-2a02:a452:9bf7:0:9b70:c1eb:9ede:91d6/128 anonymity-network,tor,tor-middle
+2a02:a452:9bf7:0:b4d:1af1:4b47:7c1/128 anonymity-network,tor,tor-middle
 2a02:a456:4df0:0:216:3eff:fe85:8ab6/128 anonymity-network,tor,tor-middle
 2a02:a457:961b:1:1:c:bad:c0de/128 anonymity-network,tor,tor-guard
 2a02:a457:961b:1:1e86:bff:fe20:2c8/128 anonymity-network,tor,tor-guard
@@ -76602,7 +76601,7 @@
 2a04:dd00:26:9:216:3cff:feb0:c650/128 anonymity-network,tor,tor-guard
 2a04:dd01:19:74::2/128 anonymity-network,tor,tor-middle
 2a05:1500:600:12:1c00:d7ff:fe00:5469/128 anonymity-network,tor,tor-middle
-2a05:4140:3::2ac7/128 anonymity-network,tor,tor-guard
+2a05:4140:3::2ac7/128 anonymity-network,tor,tor-middle
 2a05:4140:3::438/128 anonymity-network,tor,tor-middle
 2a05:41c0:8:9a00::1/128 anonymity-network,tor,tor-middle
 2a05:541:110:3e::1/128 anonymity-network,tor,tor-exit
@@ -77724,7 +77723,7 @@
 2a0a:4cc0:2000:c278:a8ab:47ff:fe26:a3b1/128 anonymity-network,tor,tor-guard
 2a0a:4cc0:2000:cd4c::12/128 anonymity-network,tor,tor-exit
 2a0a:4cc0:3:10d::42/128 anonymity-network,tor,tor-middle
-2a0a:4cc0:80:178b:c85e:45ff:fec4:a4cd/128 anonymity-network,tor,tor-guard
+2a0a:4cc0:80:178b:c85e:45ff:fec4:a4cd/128 anonymity-network,tor,tor-middle
 2a0a:4cc0:80:193::1/128 anonymity-network,tor,tor-guard
 2a0a:4cc0:80:19db:88b1:f8ff:fe4c:827b/128 anonymity-network,tor,tor-guard
 2a0a:4cc0:80:1e1:f1d0:2:310:31/128 anonymity-network,tor,tor-guard
@@ -77898,7 +77897,6 @@
 2a0b:f4c2:2:1::205/128 anonymity-network,tor,tor-guard
 2a0b:f4c2:2:1::206/128 anonymity-network,tor,tor-guard
 2a0b:f4c2:2:1::207/128 anonymity-network,tor,tor-guard
-2a0b:f4c2:2:1::207/128 anonymity-network,tor,tor-middle
 2a0b:f4c2:2:1::208/128 anonymity-network,tor,tor-guard
 2a0b:f4c2:2:1::209/128 anonymity-network,tor,tor-guard
 2a0b:f4c2:2:1::210/128 anonymity-network,tor,tor-guard
@@ -77986,6 +77984,7 @@
 2a0c:16c0:500:296:216:3cff:fef2:c79b/128 anonymity-network,tor,tor-guard
 2a0c:2500:571:ffb:f935:ed9c:6751:e026/128 anonymity-network,tor,tor-middle
 2a0c:4b80::/34 bgp_announced,bgp_only,geo,hispasat,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
+2a0c:4d00:1:16::1/128 anonymity-network,tor,tor-exit
 2a0c:4d00:2:8::2/128 anonymity-network,tor,tor-exit
 2a0c:5700:3133:1708:8ef0:9cff:fec0:7a7b/128 anonymity-network,tor,tor-exit
 2a0c:5700:3133:4000:be24:11ff:fe07:68d/128 anonymity-network,tor,tor-exit
@@ -78042,6 +78041,7 @@
 2a0d:3341:bb00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:bc00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:bc00::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
+2a0d:3341:bc80::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:bd00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:be00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:bf00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -78097,6 +78097,7 @@
 2a0d:3341:fc00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:fd00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:fe00::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
+2a0d:3341:fe00::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3341:fe80::/41 bgp_announced,bgp_only,leo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3344:1000::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
 2a0d:3344:100::/40 announced,bgp_announced,geoip_valid,leo,origin_asn_expected,pop_present,ptr_missing,satellite,satellite-internet,satellite_internet,spacex
@@ -78273,7 +78274,7 @@
 2a0f:5f45:535::d8/128 anonymity-network,tor,tor-guard
 2a0f:5f46:835::54/128 anonymity-network,tor,tor-guard
 2a0f:85c1:356:1b63::1/128 anonymity-network,tor,tor-exit
-2a0f:85c1:840:75d8::1/128 anonymity-network,tor,tor-middle
+2a0f:85c1:840:75d8::1/128 anonymity-network,tor,tor-guard
 2a0f:85c1:840:883b::1/128 anonymity-network,tor,tor-middle
 2a0f:85c1:8d2:33c5::1/128 anonymity-network,tor,tor-middle
 2a0f:85c1:b36:ea::1/128 anonymity-network,tor,tor-guard
@@ -78313,7 +78314,7 @@
 2a0f:e586:f:f:a060:ebda:49aa:b011/128 anonymity-network,tor,tor-middle
 2a0f:e586:f:f:baa4:d491:90be:dca5/128 anonymity-network,tor,tor-exit
 2a10:1fc0:11::4281:db38/128 anonymity-network,tor,tor-middle
-2a10:1fc0:1::3705:3a8/128 anonymity-network,tor,tor-guard
+2a10:1fc0:1::3705:3a8/128 anonymity-network,tor,tor-middle
 2a10:1fc0:1::5431:73c1/128 anonymity-network,tor,tor-middle
 2a10:1fc0:1::848e:25b6/128 anonymity-network,tor,tor-guard
 2a10:1fc0:1::a476:d47c/128 anonymity-network,tor,tor-guard
@@ -78381,10 +78382,9 @@
 2a12:bec0:20b:da62::1/128 anonymity-network,tor,tor-guard
 2a12:bec0:20b:f20c::1/128 anonymity-network,tor,tor-guard
 2a12:bec0:20c:94bb::1/128 anonymity-network,tor,tor-guard
-2a12:bec4:1651:104::1e7/128 anonymity-network,tor,tor-middle
 2a12:bec4:1651:104::db1/128 anonymity-network,tor,tor-middle
 2a12:bec4:1821:13a::a/128 anonymity-network,tor,tor-guard
-2a12:bec4:1821:2a6::a/128 anonymity-network,tor,tor-guard
+2a12:bec4:1821:2a6::a/128 anonymity-network,tor,tor-middle
 2a12:bec4:1821:381::a/128 anonymity-network,tor,tor-middle
 2a12:bec4:1821:4ef::a/128 anonymity-network,tor,tor-middle
 2a12:bec4:1821:576::a/128 anonymity-network,tor,tor-middle
@@ -78405,7 +78405,7 @@
 2a12:de40:21:33ab::/128 anonymity-network,tor,tor-guard
 2a13:29c0:76b9:29e5:95d5:fa34:f713:1/128 anonymity-network,tor,tor-guard
 2a13:29c0:7c08:9c12:a883:ab1e:7e4b:1/128 anonymity-network,tor,tor-guard
-2a13:2c0::31a0:a5c6:a786:bbbc/128 anonymity-network,tor,tor-guard
+2a13:2c0::31a0:a5c6:a786:bbbc/128 anonymity-network,tor,tor-middle
 2a13:2c0::3fd4:b443:8958:2c4f/128 anonymity-network,tor,tor-middle
 2a13:7dc0:2000:ea::1/128 anonymity-network,tor,tor-guard
 2a13:9500:10e:3c::a/128 anonymity-network,tor,tor-middle
@@ -80054,13 +80054,13 @@
 31.14.96.18/32 anonymity-network,tor,tor-guard
 31.16.224.197/32 anonymity-network,tor,tor-middle
 31.164.110.176/32 anonymity-network,tor,tor-guard
-31.164.231.4/32 anonymity-network,tor,tor-middle
+31.164.231.4/32 anonymity-network,tor,tor-guard
 31.165.119.170/32 anonymity-network,tor,tor-middle
 31.170.22.133/32 anonymity-network,tor,tor-guard
 31.170.22.199/32 anonymity-network,tor,tor-guard
 31.171.154.162/32 anonymity-network,tor,tor-guard
 31.171.154.165/32 anonymity-network,tor,tor-guard
-31.171.154.173/32 anonymity-network,tor,tor-middle
+31.171.154.173/32 anonymity-network,tor,tor-guard
 31.172.47.28/32 anonymity-network,tor,tor-guard
 31.18.58.221/32 anonymity-network,tor,tor-middle
 31.185.105.153/32 anonymity-network,tor,tor-middle
@@ -82244,7 +82244,7 @@
 36.103.232.128/26 cloud,datacenter,hosting
 36.103.232.128/26 cloud,datacenter,hosting
 36.225.45.93/32 anonymity-network,tor,tor-middle
-36.227.241.251/32 anonymity-network,tor,tor-middle
+36.227.197.98/32 anonymity-network,tor,tor-middle
 37.1.160.0/21 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 37.1.161.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 37.1.161.0/25 bgp_not_announced,geo_or_hybrid_satellite,geoip_valid,planned_not_announced,pop_missing,prefix_only_in_geofeed,satellite,satellite-internet,satellite_internet,viasat
@@ -82552,6 +82552,7 @@
 38.134.43.12/32 anonymity-network,tor,tor-guard
 38.135.25.206/32 anonymity-network,tor,tor-exit
 38.148.98.155/32 anonymity-network,tor,tor-guard
+38.156.204.50/32 anonymity-network,tor,tor-middle
 38.175.135.223/32 anonymity-network,tor,tor-middle
 38.180.114.69/32 anonymity-network,tor,tor-middle
 38.180.153.222/32 anonymity-network,tor,tor-middle
@@ -94157,7 +94158,6 @@
 46.101.58.207/32 anonymity-network,tor,tor-middle
 46.101.79.37/32 anonymity-network,tor,tor-middle
 46.105.91.78/32 anonymity-network,tor,tor-guard
-46.105.91.78/32 anonymity-network,tor,tor-middle
 46.107.116.144/32 anonymity-network,tor,tor-guard
 46.110.43.156/32 anonymity-network,tor,tor-middle
 46.128.63.237/32 anonymity-network,tor,tor-middle
@@ -94169,8 +94169,8 @@
 46.137.192.0/19 cloud,datacenter,hosting
 46.137.224.0/19 cloud,datacenter,hosting
 46.137.224.0/19 cloud,datacenter,hosting
-46.142.5.57/32 anonymity-network,tor,tor-middle
-46.142.7.42/32 anonymity-network,tor,tor-middle
+46.142.5.221/32 anonymity-network,tor,tor-middle
+46.142.6.77/32 anonymity-network,tor,tor-middle
 46.149.125.9/32 anonymity-network,tor,tor-guard
 46.151.182.132/32 anonymity-network,tor,tor-guard
 46.164.152.0/23 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
@@ -94442,6 +94442,7 @@
 46.22.128.0/20 bentley_walker,bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
 46.22.157.27/32 anonymity-network,tor,tor-middle
 46.22.165.111/32 anonymity-network,tor,tor-guard
+46.22.4.135/32 anonymity-network,tor,tor-middle
 46.224.10.162/32 anonymity-network,tor,tor-middle
 46.224.139.214/32 anonymity-network,tor,tor-guard
 46.224.139.214/32 anonymity-network,tor,tor-middle
@@ -94480,6 +94481,7 @@
 46.28.196.23/32 ad-verification,bot,crawler
 46.28.71.50/32 anonymity-network,tor,tor-exit
 46.30.8.0/21 bgp_announced,bgp_only,geo_mss,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_research,usap
+46.34.3.123/32 anonymity-network,tor,tor-middle
 46.38.233.212/32 anonymity-network,tor,tor-middle
 46.38.236.250/32 anonymity-network,tor,tor-guard
 46.38.241.145/32 anonymity-network,tor,tor-guard
@@ -96550,7 +96552,7 @@
 5.180.82.224/32 anonymity-network,tor,tor-guard
 5.181.156.173/32 anonymity-network,tor,tor-middle
 5.181.158.232/32 anonymity-network,tor,tor-guard
-5.181.177.223/32 anonymity-network,tor,tor-guard
+5.181.177.223/32 anonymity-network,tor,tor-middle
 5.181.177.57/32 anonymity-network,tor,tor-guard
 5.181.2.186/32 anonymity-network,tor,tor-guard
 5.181.201.20/32 anonymity-network,tor,tor-middle
@@ -111702,8 +111704,7 @@
 62.241.63.0/32 bot,crawler,seo
 62.244.223.0/24 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,telespazio
 62.246.242.60/32 anonymity-network,tor,tor-middle
-62.246.255.68/32 anonymity-network,tor,tor-middle
-62.27.232.45/32 anonymity-network,tor,tor-middle
+62.246.253.70/32 anonymity-network,tor,tor-middle
 62.3.58.205/32 anonymity-network,tor,tor-middle
 62.35.4.151/32 anonymity-network,tor,tor-guard
 62.38.144.238/32 anonymity-network,tor,tor-guard
@@ -111794,7 +111795,7 @@
 62.67.28.50/32 anonymity-network,tor,tor-guard
 62.72.47.105/32 anonymity-network,tor,tor-exit
 62.84.176.89/32 anonymity-network,tor,tor-exit
-62.93.9.253/32 anonymity-network,tor,tor-middle
+62.93.6.219/32 anonymity-network,tor,tor-middle
 63.160.212.0/22 bgp_announced,bgp_only,deep_space,nasa,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,space_agency_telemetry
 63.160.216.0/23 bgp_announced,bgp_only,deep_space,nasa,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,space_agency_telemetry
 63.176.0.0/14 cloud,datacenter,hosting
@@ -112766,7 +112767,7 @@
 64.65.62.78/32 anonymity-network,tor,tor-guard
 64.65.62.79/32 anonymity-network,tor,tor-guard
 64.65.62.8/32 anonymity-network,tor,tor-guard
-64.65.62.80/32 anonymity-network,tor,tor-middle
+64.65.62.80/32 anonymity-network,tor,tor-guard
 64.65.62.81/32 anonymity-network,tor,tor-guard
 64.65.62.82/32 anonymity-network,tor,tor-guard
 64.65.62.83/32 anonymity-network,tor,tor-guard
@@ -112780,7 +112781,7 @@
 64.65.62.90/32 anonymity-network,tor,tor-guard
 64.65.62.91/32 anonymity-network,tor,tor-guard
 64.65.62.92/32 anonymity-network,tor,tor-guard
-64.65.62.93/32 anonymity-network,tor,tor-guard
+64.65.62.93/32 anonymity-network,tor,tor-middle
 64.65.62.94/32 anonymity-network,tor,tor-guard
 64.65.62.95/32 anonymity-network,tor,tor-guard
 64.65.62.96/32 anonymity-network,tor,tor-guard
@@ -113654,7 +113655,6 @@
 67.220.224.0/20 cloud,datacenter,hosting
 67.220.240.0/20 cloud,datacenter,hosting
 67.225.71.60/32 anonymity-network,tor,tor-middle
-67.232.198.157/32 anonymity-network,tor,tor-middle
 67.245.17.215/32 anonymity-network,tor,tor-middle
 67.245.193.165/32 anonymity-network,tor,tor-middle
 67.44.0.0/20 bgp_announced,bgp_only,echostar,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
@@ -113870,6 +113870,7 @@
 67.54.253.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 67.54.254.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
 67.54.255.0/24 bgp_announced,bgp_only,geo_or_hybrid_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,viasat
+67.63.120.162/32 anonymity-network,tor,tor-middle
 67.90.248.0/24 bgp_announced,bgp_only,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,royal_caribbean,satellite,satellite-internet,satellite_cruise_line
 68.119.34.177/32 anonymity-network,tor,tor-middle
 68.154.0.0/15 cloud,datacenter,hosting
@@ -115647,15 +115648,15 @@
 71.19.148.104/32 anonymity-network,tor,tor-middle
 71.19.149.21/32 anonymity-network,tor,tor-middle
 71.19.157.127/32 anonymity-network,tor,tor-middle
-71.192.69.243/32 anonymity-network,tor,tor-guard
+71.192.69.243/32 anonymity-network,tor,tor-middle
 71.212.25.96/32 anonymity-network,tor,tor-guard
-71.223.100.45/32 anonymity-network,tor,tor-middle
 71.233.165.107/32 anonymity-network,tor,tor-guard
 71.239.181.112/32 anonymity-network,tor,tor-middle
 71.24.145.5/32 anonymity-network,tor,tor-middle
 71.244.170.31/32 anonymity-network,tor,tor-guard
-71.38.161.48/32 anonymity-network,tor,tor-guard
+71.38.161.48/32 anonymity-network,tor,tor-middle
 71.42.125.218/32 anonymity-network,tor,tor-middle
+71.54.160.232/32 anonymity-network,tor,tor-middle
 71.6.0.0/16 bot,crawler,security-scanner
 71.62.142.121/32 anonymity-network,tor,tor-middle
 72.10.237.12/32 anonymity-network,tor,tor-middle
@@ -116537,7 +116538,7 @@
 74.208.153.186/32 anonymity-network,tor,tor-guard
 74.208.155.31/32 anonymity-network,tor,tor-guard
 74.208.171.78/32 anonymity-network,tor,tor-guard
-74.208.182.78/32 anonymity-network,tor,tor-middle
+74.208.182.78/32 anonymity-network,tor,tor-guard
 74.208.189.124/32 anonymity-network,tor,tor-middle
 74.208.192.81/32 anonymity-network,tor,tor-exit
 74.208.192.81/32 anonymity-network,tor,tor-guard
@@ -116552,6 +116553,7 @@
 74.208.60.50/32 anonymity-network,tor,tor-guard
 74.208.77.132/32 anonymity-network,tor,tor-guard
 74.214.40.86/32 anonymity-network,tor,tor-middle
+74.215.157.209/32 anonymity-network,tor,tor-guard
 74.215.157.209/32 anonymity-network,tor,tor-middle
 74.220.174.221/32 anonymity-network,tor,tor-guard
 74.222.12.196/32 anonymity-network,tor,tor-exit
@@ -118560,7 +118562,6 @@
 75.136.236.255/32 anonymity-network,tor,tor-middle
 75.145.166.70/32 anonymity-network,tor,tor-guard
 75.145.166.75/32 anonymity-network,tor,tor-guard
-75.168.241.236/32 anonymity-network,tor,tor-middle
 75.176.43.62/32 anonymity-network,tor,tor-middle
 75.184.13.239/32 anonymity-network,tor,tor-middle
 75.2.0.0/17 cloud,datacenter,hosting
@@ -118688,6 +118689,7 @@
 77.90.185.93/32 anonymity-network,tor,tor-exit
 77.90.35.165/32 anonymity-network,tor,tor-middle
 77.90.63.128/32 anonymity-network,tor,tor-guard
+77.90.8.65/32 anonymity-network,tor,tor-middle
 77.92.144.97/32 anonymity-network,tor,tor-middle
 78.12.0.0/15 cloud,datacenter,hosting
 78.12.0.0/15 cloud,datacenter,hosting
@@ -118747,6 +118749,7 @@
 78.47.173.76/32 bot,crawler,monitoring
 78.47.189.21/32 anonymity-network,tor,tor-middle
 78.47.98.55/32 bot,crawler,monitoring
+78.48.229.41/32 anonymity-network,tor,tor-middle
 78.60.148.52/32 anonymity-network,tor,tor-middle
 78.67.20.226/32 anonymity-network,tor,tor-guard
 78.80.158.218/32 anonymity-network,tor,tor-guard
@@ -118807,6 +118810,7 @@
 79.236.196.118/32 anonymity-network,tor,tor-middle
 79.243.100.104/32 anonymity-network,tor,tor-middle
 79.249.177.24/32 anonymity-network,tor,tor-middle
+79.249.238.180/32 anonymity-network,tor,tor-middle
 79.254.171.141/32 anonymity-network,tor,tor-middle
 79.255.166.170/32 anonymity-network,tor,tor-middle
 79.43.39.92/32 anonymity-network,tor,tor-middle
@@ -118887,11 +118891,11 @@
 80.126.0.0/24 cloud,datacenter,hosting
 80.126.1.0/24 cloud,datacenter,hosting
 80.126.2.0/24 cloud,datacenter,hosting
-80.129.44.221/32 anonymity-network,tor,tor-middle
 80.129.5.98/32 anonymity-network,tor,tor-guard
 80.129.5.98/32 anonymity-network,tor,tor-middle
-80.145.220.229/32 anonymity-network,tor,tor-middle
+80.145.223.156/32 anonymity-network,tor,tor-middle
 80.151.220.220/32 anonymity-network,tor,tor-middle
+80.177.247.86/32 anonymity-network,tor,tor-middle
 80.193.16.46/32 anonymity-network,tor,tor-middle
 80.194.19.11/32 anonymity-network,tor,tor-middle
 80.208.58.219/32 anonymity-network,tor,tor-middle
@@ -119153,7 +119157,7 @@
 82.118.21.80/32 anonymity-network,tor,tor-middle
 82.118.248.205/32 anonymity-network,tor,tor-exit
 82.126.182.66/32 anonymity-network,tor,tor-middle
-82.135.77.145/32 anonymity-network,tor,tor-middle
+82.135.68.97/32 anonymity-network,tor,tor-middle
 82.139.252.18/32 anonymity-network,tor,tor-guard
 82.141.122.156/32 anonymity-network,tor,tor-guard
 82.149.227.125/32 anonymity-network,tor,tor-guard
@@ -119277,7 +119281,6 @@
 83.118.240.0/22 cloud,datacenter,hosting
 83.119.128.0/18 cloud,datacenter,hosting
 83.119.128.0/18 cloud,datacenter,hosting
-83.135.166.17/32 anonymity-network,tor,tor-middle
 83.136.107.38/32 anonymity-network,tor,tor-guard
 83.136.211.242/32 anonymity-network,tor,tor-guard
 83.138.192.0/18 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet,turksat
@@ -119333,11 +119336,11 @@
 83.243.191.191/32 anonymity-network,tor,tor-guard
 83.243.191.191/32 anonymity-network,tor,tor-middle
 83.248.33.6/32 anonymity-network,tor,tor-middle
-83.250.195.250/32 anonymity-network,tor,tor-middle
 83.250.47.221/32 anonymity-network,tor,tor-middle
 83.254.140.3/32 anonymity-network,tor,tor-middle
 83.32.161.162/32 anonymity-network,tor,tor-middle
 83.51.111.2/32 anonymity-network,tor,tor-middle
+83.52.172.36/32 anonymity-network,tor,tor-middle
 83.69.253.0/24 bgp_announced,bgp_only,esa,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,space_agency_telemetry
 83.69.254.0/24 bgp_announced,bgp_only,esa,mixed_satellite,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,space_agency_telemetry
 83.7.170.65/32 anonymity-network,tor,tor-guard
@@ -119357,12 +119360,12 @@
 84.167.253.32/32 anonymity-network,tor,tor-middle
 84.168.219.220/32 anonymity-network,tor,tor-guard
 84.172.121.193/32 anonymity-network,tor,tor-guard
-84.173.149.127/32 anonymity-network,tor,tor-middle
+84.173.145.235/32 anonymity-network,tor,tor-middle
 84.185.238.106/32 anonymity-network,tor,tor-guard
 84.19.176.161/32 anonymity-network,tor,tor-guard
 84.19.182.20/32 anonymity-network,tor,tor-exit
+84.191.129.171/32 anonymity-network,tor,tor-middle
 84.191.134.249/32 anonymity-network,tor,tor-middle
-84.191.139.23/32 anonymity-network,tor,tor-middle
 84.200.154.101/32 anonymity-network,tor,tor-guard
 84.201.0.0/16 bot,crawler,search
 84.208.228.159/32 anonymity-network,tor,tor-guard
@@ -119457,7 +119460,6 @@
 84.39.226.128/32 ad-verification,bot,crawler
 84.39.229.82/32 ad-verification,bot,crawler
 84.39.231.145/32 ad-verification,bot,crawler
-84.46.31.32/32 anonymity-network,tor,tor-middle
 84.46.78.85/32 anonymity-network,tor,tor-guard
 84.46.83.142/32 anonymity-network,tor,tor-guard
 84.50.179.180/32 anonymity-network,tor,tor-guard
@@ -119734,7 +119736,6 @@
 86.33.54.60/32 anonymity-network,tor,tor-middle
 86.43.92.99/32 anonymity-network,tor,tor-middle
 86.45.51.183/32 anonymity-network,tor,tor-middle
-86.52.62.47/32 anonymity-network,tor,tor-guard
 86.52.62.47/32 anonymity-network,tor,tor-middle
 86.54.28.49/32 anonymity-network,tor,tor-exit
 86.54.29.67/32 anonymity-network,tor,tor-guard
@@ -119745,6 +119746,7 @@
 86.81.169.254/32 anonymity-network,tor,tor-middle
 86.86.126.113/32 anonymity-network,tor,tor-middle
 86.94.237.139/32 anonymity-network,tor,tor-middle
+87.0.24.208/32 anonymity-network,tor,tor-middle
 87.100.245.27/32 anonymity-network,tor,tor-guard
 87.106.107.89/32 anonymity-network,tor,tor-guard
 87.106.110.34/32 anonymity-network,tor,tor-guard
@@ -119800,17 +119802,16 @@
 87.120.8.91/32 anonymity-network,tor,tor-guard
 87.121.38.24/32 anonymity-network,tor,tor-middle
 87.122.205.156/32 anonymity-network,tor,tor-middle
-87.122.39.167/32 anonymity-network,tor,tor-middle
-87.123.136.102/32 anonymity-network,tor,tor-middle
+87.122.36.43/32 anonymity-network,tor,tor-middle
+87.123.138.121/32 anonymity-network,tor,tor-middle
 87.142.108.59/32 anonymity-network,tor,tor-middle
 87.145.162.252/32 anonymity-network,tor,tor-middle
-87.15.104.59/32 anonymity-network,tor,tor-middle
 87.151.190.159/32 anonymity-network,tor,tor-middle
-87.162.229.165/32 anonymity-network,tor,tor-middle
+87.162.237.226/32 anonymity-network,tor,tor-middle
 87.170.190.126/32 anonymity-network,tor,tor-middle
 87.171.71.116/32 anonymity-network,tor,tor-middle
 87.172.101.124/32 anonymity-network,tor,tor-middle
-87.210.246.101/32 anonymity-network,tor,tor-middle
+87.210.246.101/32 anonymity-network,tor,tor-guard
 87.212.76.69/32 anonymity-network,tor,tor-middle
 87.223.234.236/32 anonymity-network,tor,tor-middle
 87.229.115.23/32 anonymity-network,tor,tor-middle
@@ -119852,7 +119853,7 @@
 88.11.142.57/32 anonymity-network,tor,tor-middle
 88.119.167.62/32 anonymity-network,tor,tor-guard
 88.129.63.16/32 anonymity-network,tor,tor-guard
-88.133.32.94/32 anonymity-network,tor,tor-middle
+88.133.75.3/32 anonymity-network,tor,tor-middle
 88.148.253.198/32 anonymity-network,tor,tor-middle
 88.150.120.95/32 anonymity-network,tor,tor-guard
 88.150.28.241/32 anonymity-network,tor,tor-middle
@@ -119990,7 +119991,7 @@
 89.168.34.94/32 anonymity-network,tor,tor-middle
 89.168.64.0/18 cloud,datacenter,hosting
 89.168.93.67/32 anonymity-network,tor,tor-middle
-89.182.7.196/32 anonymity-network,tor,tor-middle
+89.182.11.225/32 anonymity-network,tor,tor-middle
 89.184.192.251/32 bot,crawler,seo
 89.185.109.216/32 anonymity-network,tor,tor-guard
 89.185.229.37/32 anonymity-network,tor,tor-guard
@@ -120018,10 +120019,11 @@
 89.231.102.37/32 anonymity-network,tor,tor-middle
 89.234.157.254/32 anonymity-network,tor,tor-exit
 89.238.167.151/32 anonymity-network,tor,tor-middle
-89.245.199.44/32 anonymity-network,tor,tor-middle
-89.246.48.180/32 anonymity-network,tor,tor-middle
+89.245.196.66/32 anonymity-network,tor,tor-middle
+89.246.103.246/32 anonymity-network,tor,tor-middle
+89.246.49.14/32 anonymity-network,tor,tor-middle
 89.247.2.109/32 anonymity-network,tor,tor-middle
-89.247.26.184/32 anonymity-network,tor,tor-middle
+89.247.26.249/32 anonymity-network,tor,tor-middle
 89.25.152.215/32 anonymity-network,tor,tor-guard
 89.25.152.215/32 anonymity-network,tor,tor-middle
 89.252.134.0/24 bgp_announced,bgp_only,gazprom_space_systems,geo,origin_asn_expected,prefix_only_in_bgp,satellite,satellite-internet,satellite_internet
@@ -121288,7 +121290,6 @@
 90.229.205.111/32 anonymity-network,tor,tor-middle
 90.231.250.205/32 anonymity-network,tor,tor-middle
 90.243.209.9/32 anonymity-network,tor,tor-middle
-90.246.71.81/32 anonymity-network,tor,tor-middle
 90.255.227.194/32 anonymity-network,tor,tor-middle
 90.36.74.192/32 anonymity-network,tor,tor-guard
 90.87.16.3/32 anonymity-network,tor,tor-guard
@@ -121452,8 +121453,9 @@
 91.33.45.139/32 anonymity-network,tor,tor-guard
 91.33.45.139/32 anonymity-network,tor,tor-middle
 91.39.72.174/32 anonymity-network,tor,tor-middle
+91.4.214.28/32 anonymity-network,tor,tor-middle
 91.41.105.186/32 anonymity-network,tor,tor-guard
-91.57.100.119/32 anonymity-network,tor,tor-middle
+91.56.117.122/32 anonymity-network,tor,tor-middle
 91.64.152.117/32 anonymity-network,tor,tor-middle
 91.65.109.32/32 anonymity-network,tor,tor-middle
 91.65.244.194/32 anonymity-network,tor,tor-middle
@@ -121542,11 +121544,11 @@
 92.114.81.18/32 ad-verification,bot,crawler
 92.114.81.22/32 ad-verification,bot,crawler
 92.116.122.111/32 anonymity-network,tor,tor-middle
-92.116.232.186/32 anonymity-network,tor,tor-middle
-92.116.235.68/32 anonymity-network,tor,tor-middle
-92.117.140.227/32 anonymity-network,tor,tor-middle
-92.117.22.147/32 anonymity-network,tor,tor-middle
-92.117.22.67/32 anonymity-network,tor,tor-middle
+92.116.233.56/32 anonymity-network,tor,tor-middle
+92.116.235.91/32 anonymity-network,tor,tor-middle
+92.117.143.202/32 anonymity-network,tor,tor-middle
+92.117.20.173/32 anonymity-network,tor,tor-middle
+92.117.21.12/32 anonymity-network,tor,tor-middle
 92.118.208.185/32 bot,crawler,seo
 92.119.164.208/32 anonymity-network,tor,tor-exit
 92.158.164.170/32 anonymity-network,tor,tor-middle
@@ -121568,6 +121570,7 @@
 92.223.105.117/32 anonymity-network,tor,tor-middle
 92.223.105.174/32 anonymity-network,tor,tor-middle
 92.223.2.232/32 anonymity-network,tor,tor-middle
+92.225.175.174/32 anonymity-network,tor,tor-middle
 92.243.20.101/32 anonymity-network,tor,tor-middle
 92.244.31.28/32 anonymity-network,tor,tor-middle
 92.246.84.133/32 anonymity-network,tor,tor-exit
@@ -121634,7 +121637,7 @@
 93.113.11.0/24 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,rscc,satellite,satellite-internet,satellite_internet
 93.113.12.0/22 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,rscc,satellite,satellite-internet,satellite_internet
 93.113.13.0/24 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,rscc,satellite,satellite-internet,satellite_internet
-93.113.25.102/32 anonymity-network,tor,tor-middle
+93.113.25.102/32 anonymity-network,tor,tor-guard
 93.113.25.109/32 anonymity-network,tor,tor-exit
 93.113.8.0/23 bgp_announced,bgp_only,geo,origin_asn_expected,prefix_only_in_bgp,rscc,satellite,satellite-internet,satellite_internet
 93.114.136.12/32 ad-verification,bot,crawler
@@ -121737,13 +121740,12 @@
 93.185.167.247/32 anonymity-network,tor,tor-guard
 93.185.97.203/32 anonymity-network,tor,tor-guard
 93.190.143.41/32 anonymity-network,tor,tor-guard
-93.194.109.177/32 anonymity-network,tor,tor-middle
-93.198.246.249/32 anonymity-network,tor,tor-middle
+93.194.100.187/32 anonymity-network,tor,tor-middle
+93.198.245.25/32 anonymity-network,tor,tor-middle
 93.200.4.87/32 anonymity-network,tor,tor-guard
-93.207.34.190/32 anonymity-network,tor,tor-middle
 93.208.222.38/32 anonymity-network,tor,tor-guard
 93.209.0.200/32 anonymity-network,tor,tor-middle
-93.221.50.114/32 anonymity-network,tor,tor-guard
+93.221.36.251/32 anonymity-network,tor,tor-guard
 93.227.180.236/32 anonymity-network,tor,tor-middle
 93.244.80.243/32 anonymity-network,tor,tor-middle
 93.44.138.85/32 anonymity-network,tor,tor-guard
@@ -121772,7 +121774,7 @@
 93.99.104.31/32 anonymity-network,tor,tor-guard
 93.99.104.40/32 anonymity-network,tor,tor-exit
 93.99.104.57/32 anonymity-network,tor,tor-guard
-93.99.104.6/32 anonymity-network,tor,tor-middle
+93.99.104.6/32 anonymity-network,tor,tor-guard
 93.99.104.87/32 anonymity-network,tor,tor-exit
 93.99.104.96/32 anonymity-network,tor,tor-middle
 93.99.105.20/32 anonymity-network,tor,tor-middle
@@ -122054,7 +122056,6 @@
 94.23.247.42/32 anonymity-network,tor,tor-guard
 94.23.45.103/32 anonymity-network,tor,tor-guard
 94.23.68.187/32 anonymity-network,tor,tor-guard
-94.23.68.187/32 anonymity-network,tor,tor-middle
 94.23.69.67/32 anonymity-network,tor,tor-guard
 94.23.70.32/32 anonymity-network,tor,tor-guard
 94.23.76.244/32 anonymity-network,tor,tor-guard
@@ -122092,7 +122093,6 @@
 94.249.153.78/32 anonymity-network,tor,tor-middle
 94.249.184.59/32 anonymity-network,tor,tor-guard
 94.249.184.60/32 anonymity-network,tor,tor-guard
-94.249.197.46/32 anonymity-network,tor,tor-middle
 94.249.231.26/32 anonymity-network,tor,tor-guard
 94.26.73.162/32 anonymity-network,tor,tor-middle
 94.27.173.13/32 anonymity-network,tor,tor-middle
@@ -122302,6 +122302,7 @@
 95.153.31.38/32 anonymity-network,tor,tor-guard
 95.153.32.22/32 anonymity-network,tor,tor-guard
 95.155.151.200/32 anonymity-network,tor,tor-exit
+95.163.166.148/32 anonymity-network,tor,tor-middle
 95.168.173.145/32 anonymity-network,tor,tor-guard
 95.17.80.54/32 anonymity-network,tor,tor-guard
 95.170.30.38/32 anonymity-network,tor,tor-guard
@@ -122719,7 +122720,7 @@
 96.9.98.42/32 anonymity-network,tor,tor-guard
 96.9.98.43/32 anonymity-network,tor,tor-guard
 96.9.98.44/32 anonymity-network,tor,tor-guard
-96.9.98.45/32 anonymity-network,tor,tor-guard
+96.9.98.45/32 anonymity-network,tor,tor-middle
 96.9.98.46/32 anonymity-network,tor,tor-guard
 96.9.98.47/32 anonymity-network,tor,tor-guard
 96.9.98.48/32 anonymity-network,tor,tor-guard
@@ -122790,6 +122791,7 @@
 97.115.93.32/32 anonymity-network,tor,tor-guard
 97.116.169.111/32 anonymity-network,tor,tor-middle
 97.120.113.58/32 anonymity-network,tor,tor-middle
+97.127.89.187/32 anonymity-network,tor,tor-middle
 97.189.230.87/32 anonymity-network,tor,tor-exit
 97.191.65.92/32 anonymity-network,tor,tor-middle
 97.243.249.240/32 anonymity-network,tor,tor-exit
