@@ -1,5 +1,7 @@
 # IP Knowledge Layer
 
+_Русская версия: [README.ru.md](README.ru.md)_
+
 Open IP enrichment knowledge layer for CIDR, ASN, cloud, crawler, Tor, and
 VPN-adjacent network intelligence.
 It also includes satellite-internet prefix intelligence derived from public
