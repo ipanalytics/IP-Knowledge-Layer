@@ -40,8 +40,8 @@ satellite internet provider, or a VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-09-26T16:42:55Z` |
-| Release | [data-20260926-164255Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260926-164255Z) |
+| Updated | `2026-09-26T21:28:46Z` |
+| Release | [data-20260926-212846Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20260926-212846Z) |
 | Records | 127,135 |
 | Prefix records | 127,135 |
 | ASN signals | 0 |
