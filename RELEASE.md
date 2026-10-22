@@ -1,8 +1,8 @@
-# IP Knowledge Layer data-20261022-051712Z
+# IP Knowledge Layer data-20261022-121802Z
 
-Automated data release generated at `2026-10-22T05:17:12Z`.
+Automated data release generated at `2026-10-22T12:18:02Z`.
 
-GitHub Release: [data-20261022-051712Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261022-051712Z)
+GitHub Release: [data-20261022-121802Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261022-121802Z)
 
 ## Highlights
 
@@ -44,9 +44,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 106,128 |
-| `satellite-internet` | 15,709 |
-| `anonymity` | 10,864 |
+| `hosting-cloud` | 106,126 |
+| `satellite-internet` | 15,704 |
+| `anonymity` | 10,871 |
 | `crawler-bot` | 8,605 |
 
 ## Top Providers
@@ -54,10 +54,10 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Provider | Records |
 |---|---:|
 | Azure | 78,777 |
-| AWS | 17,653 |
-| Tor | 10,864 |
+| AWS | 17,651 |
+| Tor | 10,871 |
 | GitHub | 7,265 |
-| starlink | 6,944 |
+| starlink | 6,937 |
 | viasat | 5,066 |
 | Amazon | 3,131 |
 | The Trade Desk | 2,615 |
@@ -69,9 +69,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Source | Records |
 |---|---:|
 | `azure` | 78,777 |
-| `aws` | 17,653 |
-| `sat-geoip` | 15,709 |
-| `tor-radar` | 10,864 |
+| `aws` | 17,651 |
+| `sat-geoip` | 15,704 |
+| `tor-radar` | 10,871 |
 | `crawler-scope` | 8,605 |
 | `github-meta` | 7,265 |
 | `gcp-cloud` | 1,135 |
