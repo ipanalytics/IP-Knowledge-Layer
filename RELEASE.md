@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20261025-051158Z
+# IP Knowledge Layer data-20261025-115624Z
 
-Automated data release generated at `2026-10-25T05:11:58Z`.
+Automated data release generated at `2026-10-25T11:56:24Z`.
 
-GitHub Release: [data-20261025-051158Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261025-051158Z)
+GitHub Release: [data-20261025-115624Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261025-115624Z)
 
 ## Highlights
 
-- 134,181 normalized knowledge records
-- 134,181 prefix records
+- 141,442 normalized knowledge records
+- 141,442 prefix records
 - 0 ASN signals
-- 11 sources
-- 2 collector errors
+- 12 sources
+- 1 collector errors
 
 ## Files To Pull
 
@@ -44,9 +44,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 98,901 |
-| `satellite-internet` | 15,707 |
-| `anonymity` | 10,954 |
+| `hosting-cloud` | 106,161 |
+| `satellite-internet` | 15,714 |
+| `anonymity` | 10,948 |
 | `crawler-bot` | 8,619 |
 
 ## Top Providers
@@ -54,26 +54,27 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Provider | Records |
 |---|---:|
 | Azure | 78,777 |
-| AWS | 17,688 |
-| Tor | 10,954 |
-| starlink | 6,939 |
+| AWS | 17,690 |
+| Tor | 10,948 |
+| GitHub | 7,265 |
+| starlink | 6,946 |
 | viasat | 5,066 |
 | Amazon | 3,131 |
 | The Trade Desk | 2,615 |
-| Google Cloud | 1,135 |
+| Google Cloud | 1,128 |
 | Oracle Cloud | 1,107 |
-| turksat | 1,003 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
 | `azure` | 78,777 |
-| `aws` | 17,688 |
-| `sat-geoip` | 15,707 |
-| `tor-radar` | 10,954 |
+| `aws` | 17,690 |
+| `sat-geoip` | 15,714 |
+| `tor-radar` | 10,948 |
 | `crawler-scope` | 8,619 |
-| `gcp-cloud` | 1,135 |
+| `github-meta` | 7,265 |
+| `gcp-cloud` | 1,128 |
 | `oracle-cloud` | 1,107 |
 | `gcp-goog` | 148 |
 | `fastly` | 24 |
@@ -84,7 +85,6 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
-| `collect_github` | `HTTP Error 403: rate limit exceeded` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
