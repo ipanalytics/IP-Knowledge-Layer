@@ -40,28 +40,28 @@ satellite internet provider, or a VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-10-31T06:11:52Z` |
-| Release | [data-20261031-061152Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261031-061152Z) |
-| Records | 120,474 |
-| Prefix records | 120,474 |
+| Updated | `2026-10-31T12:59:19Z` |
+| Release | [data-20261031-125919Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261031-125919Z) |
+| Records | 129,142 |
+| Prefix records | 129,142 |
 | ASN signals | 0 |
-| Sources | 11 |
-| Collector errors | 2 |
+| Sources | 12 |
+| Collector errors | 1 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 85,151 |
-| `satellite-internet` | 15,707 |
-| `anonymity` | 10,999 |
+| `hosting-cloud` | 93,701 |
+| `satellite-internet` | 15,725 |
+| `anonymity` | 11,099 |
 | `crawler-bot` | 8,617 |
 
 | Top Provider | Records |
 |---|---:|
 | Azure | 64,950 |
 | AWS | 17,754 |
-| Tor | 10,999 |
-| starlink | 6,960 |
-| viasat | 5,061 |
+| Tor | 11,099 |
+| GitHub | 8,534 |
+| starlink | 6,980 |
 <!-- IPKL_SUMMARY_END -->
 
 ## Download URLs

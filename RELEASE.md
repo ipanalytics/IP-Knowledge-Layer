@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20261031-061152Z
+# IP Knowledge Layer data-20261031-125919Z
 
-Automated data release generated at `2026-10-31T06:11:52Z`.
+Automated data release generated at `2026-10-31T12:59:19Z`.
 
-GitHub Release: [data-20261031-061152Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261031-061152Z)
+GitHub Release: [data-20261031-125919Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261031-125919Z)
 
 ## Highlights
 
-- 120,474 normalized knowledge records
-- 120,474 prefix records
+- 129,142 normalized knowledge records
+- 129,142 prefix records
 - 0 ASN signals
-- 11 sources
-- 2 collector errors
+- 12 sources
+- 1 collector errors
 
 ## Files To Pull
 
@@ -44,9 +44,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 85,151 |
-| `satellite-internet` | 15,707 |
-| `anonymity` | 10,999 |
+| `hosting-cloud` | 93,701 |
+| `satellite-internet` | 15,725 |
+| `anonymity` | 11,099 |
 | `crawler-bot` | 8,617 |
 
 ## Top Providers
@@ -55,14 +55,14 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 |---|---:|
 | Azure | 64,950 |
 | AWS | 17,754 |
-| Tor | 10,999 |
-| starlink | 6,960 |
+| Tor | 11,099 |
+| GitHub | 8,534 |
+| starlink | 6,980 |
 | viasat | 5,061 |
 | Amazon | 3,131 |
 | The Trade Desk | 2,615 |
-| Google Cloud | 1,135 |
+| Google Cloud | 1,151 |
 | Oracle Cloud | 1,118 |
-| turksat | 988 |
 
 ## Sources
 
@@ -70,10 +70,11 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 |---|---:|
 | `azure` | 64,950 |
 | `aws` | 17,754 |
-| `sat-geoip` | 15,707 |
-| `tor-radar` | 10,999 |
+| `sat-geoip` | 15,725 |
+| `tor-radar` | 11,099 |
 | `crawler-scope` | 8,617 |
-| `gcp-cloud` | 1,135 |
+| `github-meta` | 8,534 |
+| `gcp-cloud` | 1,151 |
 | `oracle-cloud` | 1,118 |
 | `gcp-goog` | 148 |
 | `fastly` | 24 |
@@ -84,7 +85,6 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
-| `collect_github` | `HTTP Error 403: rate limit exceeded` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
