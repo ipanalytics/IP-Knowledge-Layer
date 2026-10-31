@@ -1,16 +1,16 @@
-# IP Knowledge Layer data-20261030-223651Z
+# IP Knowledge Layer data-20261031-061152Z
 
-Automated data release generated at `2026-10-30T22:36:51Z`.
+Automated data release generated at `2026-10-31T06:11:52Z`.
 
-GitHub Release: [data-20261030-223651Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261030-223651Z)
+GitHub Release: [data-20261031-061152Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261031-061152Z)
 
 ## Highlights
 
-- 127,671 normalized knowledge records
-- 127,671 prefix records
+- 120,474 normalized knowledge records
+- 120,474 prefix records
 - 0 ASN signals
-- 12 sources
-- 1 collector errors
+- 11 sources
+- 2 collector errors
 
 ## Files To Pull
 
@@ -44,9 +44,9 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 92,396 |
+| `hosting-cloud` | 85,151 |
 | `satellite-internet` | 15,707 |
-| `anonymity` | 10,951 |
+| `anonymity` | 10,999 |
 | `crawler-bot` | 8,617 |
 
 ## Top Providers
@@ -54,26 +54,25 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 | Provider | Records |
 |---|---:|
 | Azure | 64,950 |
-| AWS | 17,734 |
-| Tor | 10,951 |
-| GitHub | 7,265 |
+| AWS | 17,754 |
+| Tor | 10,999 |
 | starlink | 6,960 |
 | viasat | 5,061 |
 | Amazon | 3,131 |
 | The Trade Desk | 2,615 |
 | Google Cloud | 1,135 |
 | Oracle Cloud | 1,118 |
+| turksat | 988 |
 
 ## Sources
 
 | Source | Records |
 |---|---:|
 | `azure` | 64,950 |
-| `aws` | 17,734 |
+| `aws` | 17,754 |
 | `sat-geoip` | 15,707 |
-| `tor-radar` | 10,951 |
+| `tor-radar` | 10,999 |
 | `crawler-scope` | 8,617 |
-| `github-meta` | 7,265 |
 | `gcp-cloud` | 1,135 |
 | `oracle-cloud` | 1,118 |
 | `gcp-goog` | 148 |
@@ -85,6 +84,7 @@ curl -fsSLO "$BASE/cidr-tags.txt"
 
 | Collector | Error |
 |---|---|
+| `collect_github` | `HTTP Error 403: rate limit exceeded` |
 | `collect_vpn_asn` | `local VPN ASN summary not found; skipped in standalone runs` |
 
 ## Notes
