@@ -40,28 +40,28 @@ satellite internet provider, or a VPN-adjacent ASN signal.
 <!-- IPKL_SUMMARY_START -->
 | Metric | Value |
 |---|---:|
-| Updated | `2026-11-24T10:20:38Z` |
-| Release | [data-20261124-102038Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261124-102038Z) |
-| Records | 138,228 |
-| Prefix records | 138,228 |
+| Updated | `2026-11-24T22:43:01Z` |
+| Release | [data-20261124-224301Z](https://github.com/ipanalytics/IP-Knowledge-Layer/releases/tag/data-20261124-224301Z) |
+| Records | 153,518 |
+| Prefix records | 153,518 |
 | ASN signals | 0 |
-| Sources | 11 |
-| Collector errors | 2 |
+| Sources | 12 |
+| Collector errors | 1 |
 
 | Layer | Records |
 |---|---:|
-| `hosting-cloud` | 93,842 |
-| `satellite-internet` | 24,351 |
-| `anonymity` | 11,405 |
+| `hosting-cloud` | 109,150 |
+| `satellite-internet` | 24,354 |
+| `anonymity` | 11,384 |
 | `crawler-bot` | 8,630 |
 
 | Top Provider | Records |
 |---|---:|
-| Azure | 73,542 |
-| AWS | 17,835 |
+| Azure | 80,212 |
+| AWS | 17,839 |
 | starlink | 15,573 |
-| Tor | 11,405 |
-| viasat | 5,065 |
+| Tor | 11,384 |
+| GitHub | 8,634 |
 <!-- IPKL_SUMMARY_END -->
 
 ## Download URLs
